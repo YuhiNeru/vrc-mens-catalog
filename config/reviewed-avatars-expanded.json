@@ -1,0 +1,730 @@
+[
+  {
+    "entity": "product",
+    "key": "5142722",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "kalne",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：人間と自認する人形の少年です",
+      "aliases": [
+        "kalne"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5673586",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "uzuruha",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：そよ風が似合うウグイスの男の子です🐤",
+      "aliases": [
+        "uzuruha"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5788427",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "rei",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：狐のお兄さんアバター",
+      "aliases": [
+        "rei"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "6717995",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "zev",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：ちょっと治安の悪い感じの男性アバターです。",
+      "aliases": [
+        "zev"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5236104",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "tonnerre",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：狼耳の男の子です。",
+      "aliases": [
+        "tonnerre"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "7430852",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "licht",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：寝静まった街の片隅で、密やかに生きる青年。",
+      "aliases": [
+        "licht",
+        "リヒト"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "4284866",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "lunato",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：狐耳の男の子です。",
+      "aliases": [
+        "lunato"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "4593994",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "shipilka",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：泣き虫な星の天使の男の子です🌟",
+      "aliases": [
+        "shipilka"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8059878",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "akari",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：アイドルの姿、プライベートの姿、２つの顔を持つ青年。",
+      "aliases": [
+        "akari"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8589778",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "ay6",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：通信機を背負った青年「AY6」のオリジナル3Dアバターです。痩せています。",
+      "aliases": [
+        "ay6",
+        "Ayumu"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8273146",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "carre",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：ジト目がちなゾンビの男の子。",
+      "aliases": [
+        "carre"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5203211",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "rwerutu",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：首が取れても死ねない不死身の少年のVRC想定3Dモデルデータです。",
+      "aliases": [
+        "rwerutu"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5321673",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "romad",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：荒廃した世界で生きる人外風男性アバターです。",
+      "aliases": [
+        "romad"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8000819",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "nico",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：青年版のオリジン素体と、少年版の+Headボディの2種類が同梱されています。",
+      "aliases": [
+        "nico"
+      ],
+      "ageGroup": "未分類"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5598963",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "astel",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：◇オリジナル3Dモデル　天使の男の子 Astel（アステル）",
+      "aliases": [
+        "astel"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "4919799",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "techie",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：サイバーパンク系男性アバターです。",
+      "aliases": [
+        "techie"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "7425658",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "nehail",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：骨がモチーフの天使の少年です。",
+      "aliases": [
+        "nehail"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "7118952",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "moln",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：羊モチーフの男の子です。",
+      "aliases": [
+        "moln"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8670449",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "yuri",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：BLUESTELLA様「彼方」の素体に、男性的な骨格と筋肉の陰影をテクスチャで刻み込んだボディ。",
+      "aliases": [
+        "yuri"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "4580093",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "foshunia",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：暗闇を照らす 光のドラゴンの男の子『フォシュニア(Foshunia)』",
+      "aliases": [
+        "foshunia"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8005883",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "ashel",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：貴方と永遠を共にするハーバリウム×少年ドール",
+      "aliases": [
+        "ashel"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "6282388",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "sarvadarsa",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：神話に登場しそうな神様風の男性アバターです。",
+      "aliases": [
+        "sarvadarsa"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "1914840",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "neige",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：垂れ耳うさぎの男の子です。",
+      "aliases": [
+        "neige"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "6106392",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "nguyen",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：快活でエキゾチックな雰囲気の男性アバターです。",
+      "aliases": [
+        "nguyen"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "6773043",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "yoshitsugu",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：スーツっぽい服とすこしかっちりした髪型の男性アバターです。",
+      "aliases": [
+        "yoshitsugu"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5498540",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "renjo",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：現代社会に生きる、社畜系ビジネスマンな男性アバターです。",
+      "aliases": [
+        "renjo",
+        "連成さん",
+        "連成"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "3002686",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "nebia",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：狐耳の男の子です。",
+      "aliases": [
+        "nebia"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8596249",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "kirisame",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：ゲームガジェット好きなラグドールの男の子です。",
+      "aliases": [
+        "kirisame"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8561302",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "gomi",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：ベーシストの青年、「五味」です。",
+      "aliases": [
+        "gomi"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "3894620",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "danzai",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：男性です。女性ではないのでご注意。",
+      "aliases": [
+        "danzai"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "4789903",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "leu",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：落ち着いたところが好きな男の子です。",
+      "aliases": [
+        "leu"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "4267802",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "itsuki",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：縊鬼（くびりおに）という鬼をモチーフにした男性アバターです。",
+      "aliases": [
+        "itsuki"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "3732048",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "ryoma",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：VRChatでの使用を想定したクールな雰囲気の男性アバターです。",
+      "aliases": [
+        "ryoma"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "7390619",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "andrew",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：アリスモチーフのお人形のような顔をした男の子",
+      "aliases": [
+        "andrew"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "7696125",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "hakslea",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：透明感のある水兎少年の『Hakslea  ハクスレア』です。",
+      "aliases": [
+        "hakslea"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8612990",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "kirishima",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：サスペンスドラマの刑事、あるいは訳ありの容疑者を彷彿とさせる、どこか影のある30代男性をイメージして制作しました。",
+      "aliases": [
+        "kirishima"
+      ],
+      "ageGroup": "壮年"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "6050736",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "shirai",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：水族館のスタッフ、店員にいそうな短髪の青年です。",
+      "aliases": [
+        "shirai"
+      ]
+    }
+  },
+  {
+    "entity": "product",
+    "key": "4964838",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "mivuol",
+    "patch": {
+      "review": "verified",
+      "genderEvidence": "作者の商品説明：盲目のはずだけれど確実にこちらの目を見てくるシロフクロウの人型人外お兄さんの3Dモデルデータです。",
+      "aliases": [
+        "mivuol"
+      ]
+    }
+  }
+]

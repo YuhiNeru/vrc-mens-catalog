@@ -1,0 +1,10 @@
+[
+ {"entity":"product","key":"5260363","patch":{"kind":"avatar","review":"verified"}},
+ {"entity":"avatar","key":"komano","patch":{"review":"verified","genderEvidence":"本体の商品ID・作者を確認。衣装作者StudioYONOの商品8434318の男性向け対応一覧で狛乃（5260363）の掲載を確認し、男性向け分類をレビュー済み。"}},
+ {"entity":"product","key":"4897493","patch":{"kind":"avatar","review":"verified"}},
+ {"entity":"product","key":"5213501","patch":{"kind":"clothing","category":"セットアップ","style":"カジュアル","review":"verified"}},
+ {"entity":"compatibility","key":"5213501:avatar:komano","patch":{"fit":"full","review":"verified","evidence":"販売ページの対象モデル一覧と狛乃(Komano)の個別バリエーションを確認。素体のShrink設定調整が必要。","variantNames":["狛乃(Komano)"]}},
+ {"entity":"compatibility","key":"5213501:avatar:kuuta","patch":{"fit":"full","review":"verified","evidence":"販売ページの対象モデル一覧とくうた(Kuuta)の個別バリエーションを確認。素体のShrink設定調整が必要。","variantNames":["くうた(Kuuta)"]}},
+ {"entity":"product","key":"8434318","patch":{"kind":"clothing","category":"セットアップ","style":"モード","review":"verified"}},
+ {"entity":"compatibility","key":"8434318:avatar:komano","patch":{"fit":"full","review":"verified","evidence":"作者の男性向け対応一覧に狛乃（5260363）を明記。lilToon・最新版Modular Avatarと貫通防止設定が必要。","variantNames":["Komano","Male FullPack","FullPack"]}}
+]

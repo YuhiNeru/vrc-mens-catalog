@@ -1,0 +1,1686 @@
+[
+  {
+    "id": "komano",
+    "productId": "5260363",
+    "name": "狛乃",
+    "aliases": [
+      "Komano"
+    ],
+    "author": "ひゅうがなつみかん",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品情報を確認。男性向け候補として登録。管理者による分類確認を経て掲載する。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "kuuta",
+    "productId": "4897493",
+    "name": "くうた",
+    "aliases": [
+      "Kuuta"
+    ],
+    "author": "ほとぎ屋",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "商品説明で猫耳少年と明記。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "kanata",
+    "productId": "6813995",
+    "name": "彼方",
+    "aliases": [
+      "Kanata"
+    ],
+    "author": "BLUESTELLA",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者StudioYONOの商品8434318の男性向け対応一覧から登録。本体ページの正式名・作者・商品IDを取得後にレビューする候補。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "hanka",
+    "productId": "6970249",
+    "name": "斑霞",
+    "aliases": [
+      "Hanka"
+    ],
+    "author": "StudioYONO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者StudioYONOの商品8434318の男性向け対応一覧から登録。本体ページの正式名・作者・商品IDを取得後にレビューする候補。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "shidou",
+    "productId": "8086741",
+    "name": "士堂",
+    "aliases": [
+      "Shidou"
+    ],
+    "author": "MetaverseCreatorsTYO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者StudioYONOの商品8434318の男性向け対応一覧から登録。本体ページの正式名・作者・商品IDを取得後にレビューする候補。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "alue",
+    "productId": "6957623",
+    "name": "Alué",
+    "aliases": [
+      "アルエ",
+      "Alue"
+    ],
+    "author": "onair",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者StudioYONOの商品8434318の男性向け対応一覧から登録。本体ページの正式名・作者・商品IDを取得後にレビューする候補。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "nakiya",
+    "productId": "7924603",
+    "name": "泣夜",
+    "aliases": [
+      "Nakiya"
+    ],
+    "author": "Keenoo",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者StudioYONOの商品8434318の男性向け対応一覧から登録。本体ページの正式名・作者・商品IDを取得後にレビューする候補。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "noshime",
+    "productId": "7423591",
+    "name": "熨斗目:Re",
+    "aliases": [
+      "熨斗目",
+      "Noshime"
+    ],
+    "author": "伊ノ本飯店",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者StudioYONOの商品8434318の男性向け対応一覧から登録。本体ページの正式名・作者・商品IDを取得後にレビューする候補。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "bokusei",
+    "productId": "5727810",
+    "name": "墨惺",
+    "aliases": [
+      "Bokusei"
+    ],
+    "author": "ROKO SHOP",
+    "bodyId": "plushead",
+    "bodyEvidence": "作者の本体商品説明が+Head共通素体を採用すると明記。https://booth.pm/ja/items/5727810（素体 https://booth.pm/ja/items/5153266）",
+    "genderEvidence": "衣装作者のMale Version対象欄に正式名と本体URL付きで掲載。https://booth.pm/ja/items/8434318",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "kalne",
+    "productId": "5142722",
+    "name": "カルネ",
+    "aliases": [
+      "kalne"
+    ],
+    "author": "AugmentedDolls",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：人間と自認する人形の少年です",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "uzuruha",
+    "productId": "5673586",
+    "name": "ウズルハ",
+    "aliases": [
+      "uzuruha"
+    ],
+    "author": "かなﾘぁさんち",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：そよ風が似合うウグイスの男の子です🐤",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "rei",
+    "productId": "5788427",
+    "name": "怜",
+    "aliases": [
+      "rei"
+    ],
+    "author": "StudioYONO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：狐のお兄さんアバター",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "suzuya",
+    "productId": "8415837",
+    "name": "紗夜",
+    "aliases": [
+      "Suzuya"
+    ],
+    "author": "JUSTDUCKY",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者がメンズアバター用と明記する衣装の購入版・対応一覧に、紗夜と本体URLを掲載。https://booth.pm/ja/items/8199081",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "zev",
+    "productId": "6717995",
+    "name": "ゼヴ",
+    "aliases": [
+      "zev"
+    ],
+    "author": "珍飯亭",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：ちょっと治安の悪い感じの男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "tonnerre",
+    "productId": "5236104",
+    "name": "トネール",
+    "aliases": [
+      "tonnerre"
+    ],
+    "author": "Xelevia_Industry",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：狼耳の男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "licht",
+    "productId": "7430852",
+    "name": "凛仁",
+    "aliases": [
+      "licht",
+      "リヒト"
+    ],
+    "author": "MetaverseCreatorsTYO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：寝静まった街の片隅で、密やかに生きる青年。",
+    "ageGroup": "青年",
+    "review": "verified"
+  },
+  {
+    "id": "lunato",
+    "productId": "4284866",
+    "name": "ルナト",
+    "aliases": [
+      "lunato"
+    ],
+    "author": "Xelevia_Industry",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：狐耳の男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "shipilka",
+    "productId": "4593994",
+    "name": "シピルカ",
+    "aliases": [
+      "shipilka"
+    ],
+    "author": "かなﾘぁさんち",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：泣き虫な星の天使の男の子です🌟",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "yomura",
+    "productId": "8027029",
+    "name": "夜邑",
+    "aliases": [
+      "yomura"
+    ],
+    "author": "MetaverseCreatorsTYO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "akari",
+    "productId": "8059878",
+    "name": "燈裡",
+    "aliases": [
+      "akari"
+    ],
+    "author": "MetaverseCreatorsTYO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：アイドルの姿、プライベートの姿、２つの顔を持つ青年。",
+    "ageGroup": "青年",
+    "review": "verified"
+  },
+  {
+    "id": "ay6",
+    "productId": "8589778",
+    "name": "AY6",
+    "aliases": [
+      "ay6",
+      "Ayumu"
+    ],
+    "author": "DAPPI",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：通信機を背負った青年「AY6」のオリジナル3Dアバターです。痩せています。",
+    "ageGroup": "青年",
+    "review": "verified"
+  },
+  {
+    "id": "carre",
+    "productId": "8273146",
+    "name": "キャレ",
+    "aliases": [
+      "carre"
+    ],
+    "author": "neko-ririn",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：ジト目がちなゾンビの男の子。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "rwerutu",
+    "productId": "5203211",
+    "name": "ルェルツ",
+    "aliases": [
+      "rwerutu"
+    ],
+    "author": "もくもくねどこ",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：首が取れても死ねない不死身の少年のVRC想定3Dモデルデータです。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "romad",
+    "productId": "5321673",
+    "name": "ロマド",
+    "aliases": [
+      "romad"
+    ],
+    "author": "珍飯亭",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：荒廃した世界で生きる人外風男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "nico",
+    "productId": "8000819",
+    "name": "日瑚",
+    "aliases": [
+      "nico"
+    ],
+    "author": "MetaverseCreatorsTYO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：青年版のオリジン素体と、少年版の+Headボディの2種類が同梱されています。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "astel",
+    "productId": "5598963",
+    "name": "アステル",
+    "aliases": [
+      "astel"
+    ],
+    "author": "#SASIKIZU",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：◇オリジナル3Dモデル　天使の男の子 Astel（アステル）",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "techie",
+    "productId": "4919799",
+    "name": "テッキー",
+    "aliases": [
+      "techie"
+    ],
+    "author": "珍飯亭",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：サイバーパンク系男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "nehail",
+    "productId": "7425658",
+    "name": "ネハイル",
+    "aliases": [
+      "nehail"
+    ],
+    "author": "かなﾘぁさんち",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：骨がモチーフの天使の少年です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "rio",
+    "productId": "4168378",
+    "name": "リオ",
+    "aliases": [
+      "Lio"
+    ],
+    "author": "星ワタリノ空",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "本体作者が「リオ-Lio- 男の子のモデルです」と明記。本商品はサクヤ（女性）とのセット・単体売りがあるため、男性モデルのLio版を選んでください。https://booth.pm/ja/items/4168378",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "galuppi",
+    "productId": "5230685",
+    "name": "ガルッピ",
+    "aliases": [
+      "galuppi"
+    ],
+    "author": "VERMILION .Studio",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "moln",
+    "productId": "7118952",
+    "name": "モルン",
+    "aliases": [
+      "moln"
+    ],
+    "author": "Xelevia_Industry",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：羊モチーフの男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "yuri",
+    "productId": "8670449",
+    "name": "悠莉",
+    "aliases": [
+      "yuri"
+    ],
+    "author": "VISION TOKYO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：BLUESTELLA様「彼方」の素体に、男性的な骨格と筋肉の陰影をテクスチャで刻み込んだボディ。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "foshunia",
+    "productId": "4580093",
+    "name": "フォシュニア",
+    "aliases": [
+      "foshunia"
+    ],
+    "author": "Ama ama 15 ㅊ福",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：暗闇を照らす 光のドラゴンの男の子『フォシュニア(Foshunia)』",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "maro",
+    "productId": "5694723",
+    "name": "マロ",
+    "aliases": [
+      "maro"
+    ],
+    "author": "BlueCloud",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "ashel",
+    "productId": "8005883",
+    "name": "アシェル",
+    "aliases": [
+      "ashel"
+    ],
+    "author": "烏有研究所 -UYU Lab-",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：貴方と永遠を共にするハーバリウム×少年ドール",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "sarvadarsa",
+    "productId": "6282388",
+    "name": "サルヴァダルシャ",
+    "aliases": [
+      "sarvadarsa"
+    ],
+    "author": "珍飯亭",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：神話に登場しそうな神様風の男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "neige",
+    "productId": "1914840",
+    "name": "ネージュ",
+    "aliases": [
+      "neige"
+    ],
+    "author": "Xelevia_Industry",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：垂れ耳うさぎの男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "nguyen",
+    "productId": "6106392",
+    "name": "グエン",
+    "aliases": [
+      "nguyen"
+    ],
+    "author": "珍飯亭",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：快活でエキゾチックな雰囲気の男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "yoshitsugu",
+    "productId": "6773043",
+    "name": "吉嗣",
+    "aliases": [
+      "yoshitsugu"
+    ],
+    "author": "HoshinosShop",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：スーツっぽい服とすこしかっちりした髪型の男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "renjo",
+    "productId": "5498540",
+    "name": "社畜の連成さん",
+    "aliases": [
+      "renjo",
+      "連成さん",
+      "連成"
+    ],
+    "author": "珍飯亭",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：現代社会に生きる、社畜系ビジネスマンな男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "nebia",
+    "productId": "3002686",
+    "name": "ネビア",
+    "aliases": [
+      "nebia"
+    ],
+    "author": "Xelevia_Industry",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：狐耳の男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "kirisame",
+    "productId": "8596249",
+    "name": "キリサメ",
+    "aliases": [
+      "kirisame"
+    ],
+    "author": "Xelevia_Industry",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：ゲームガジェット好きなラグドールの男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "gomi",
+    "productId": "8561302",
+    "name": "五味",
+    "aliases": [
+      "gomi"
+    ],
+    "author": "かしつ物産館",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：ベーシストの青年、「五味」です。",
+    "ageGroup": "青年",
+    "review": "verified"
+  },
+  {
+    "id": "sagara",
+    "productId": "3856749",
+    "name": "相楽",
+    "aliases": [
+      "sagara"
+    ],
+    "author": "rabishop",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「■対応アバター（Men's）※セミ対応」に本体URLを確認。https://booth.pm/ja/items/7110662",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "anila",
+    "productId": "7817619",
+    "name": "アニラ",
+    "aliases": [
+      "anila"
+    ],
+    "author": "コリンディー｜Corindie",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "rinfei",
+    "productId": "7117660",
+    "name": "リンフェイ",
+    "aliases": [
+      "rinfei"
+    ],
+    "author": "#SASIKIZU",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "bamessa",
+    "productId": "5129599",
+    "name": "バメッサ",
+    "aliases": [
+      "bamessa"
+    ],
+    "author": "ソバガラノミセ",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "danzai",
+    "productId": "3894620",
+    "name": "Danzai",
+    "aliases": [
+      "danzai"
+    ],
+    "author": "#SASIKIZU",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：男性です。女性ではないのでご注意。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "leu",
+    "productId": "4789903",
+    "name": "れう",
+    "aliases": [
+      "leu"
+    ],
+    "author": "うにゃうにゃぽんぽん",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：落ち着いたところが好きな男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "itsuki",
+    "productId": "4267802",
+    "name": "壱鬼",
+    "aliases": [
+      "itsuki"
+    ],
+    "author": "A.B.Lab",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：縊鬼（くびりおに）という鬼をモチーフにした男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "ryoma",
+    "productId": "3732048",
+    "name": "涼舞",
+    "aliases": [
+      "ryoma"
+    ],
+    "author": "OGRE（オーガ）",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：VRChatでの使用を想定したクールな雰囲気の男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "andrew",
+    "productId": "7390619",
+    "name": "アンドリュー",
+    "aliases": [
+      "andrew"
+    ],
+    "author": "Ameinias Noctis",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：アリスモチーフのお人形のような顔をした男の子",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "hakslea",
+    "productId": "7696125",
+    "name": "ハクスレア",
+    "aliases": [
+      "hakslea"
+    ],
+    "author": "306Production",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：透明感のある水兎少年の『Hakslea  ハクスレア』です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "kirishima",
+    "productId": "8612990",
+    "name": "霧島",
+    "aliases": [
+      "kirishima"
+    ],
+    "author": "FUYUMIDORI",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：サスペンスドラマの刑事、あるいは訳ありの容疑者を彷彿とさせる、どこか影のある30代男性をイメージして制作しました。",
+    "ageGroup": "壮年",
+    "review": "verified"
+  },
+  {
+    "id": "azuedo",
+    "productId": "7746587",
+    "name": "アズエド",
+    "aliases": [
+      "azuedo"
+    ],
+    "author": "Drizveil",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「メンズアバター向けピエロ衣装です。」に本体URLを確認。https://booth.pm/ja/items/7577301",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "shirai",
+    "productId": "6050736",
+    "name": "志良以",
+    "aliases": [
+      "shirai"
+    ],
+    "author": "HoshinosShop",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：水族館のスタッフ、店員にいそうな短髪の青年です。",
+    "ageGroup": "青年",
+    "review": "verified"
+  },
+  {
+    "id": "mivuol",
+    "productId": "4964838",
+    "name": "ミヴョル",
+    "aliases": [
+      "mivuol"
+    ],
+    "author": "もくもくねどこ",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "作者の商品説明：盲目のはずだけれど確実にこちらの目を見てくるシロフクロウの人型人外お兄さんの3Dモデルデータです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "mao",
+    "productId": "6846646",
+    "name": "真央",
+    "aliases": [
+      "Mao"
+    ],
+    "author": "IKUSIA",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者が真央の男性向け版を明記「Mao は今回は男性用の衣装ですので、Breasts のシェイプキーには対応していません」。男性・女性の両体型を想定するモデルとして、男性向け対応版を掲載。https://booth.pm/ja/items/8361078",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "haolan",
+    "productId": "3818504",
+    "name": "ハオラン",
+    "aliases": [
+      "HAOLAN"
+    ],
+    "author": "かなﾘぁさんち",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の対応アバター一覧「メンズ male Aカテゴリ」に本体URL付きでHAOLAN-ハオラン-を掲載。https://booth.pm/ja/items/6429701",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "lumiere",
+    "productId": "5844725",
+    "name": "ルミエール",
+    "aliases": [
+      "Lumiere"
+    ],
+    "author": "珍飯亭",
+    "bodyId": "plushead",
+    "bodyEvidence": "作者の本体商品説明が+Head共通素体を採用すると明記。https://booth.pm/ja/items/5844725（素体 https://booth.pm/ja/items/5153266）",
+    "genderEvidence": "本体作者が「貴族風の少年アバターです」と明記。https://booth.pm/ja/items/5844725",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-4169438",
+    "productId": "4169438",
+    "name": "ドラゴニュート・ヴラウ",
+    "aliases": [
+      "ヴラウ』 - Vlau",
+      "ドラゴニュート・ヴラウ』 Vlau",
+      "ヴラウ"
+    ],
+    "author": "ROKO SHOP",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「◇Men'sAvatar◇」に本体URLを確認。https://booth.pm/ja/items/7018110",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8205244",
+    "productId": "8205244",
+    "name": "ひゃっこ",
+    "aliases": [
+      "ひゃっこ』 - by Niyami"
+    ],
+    "author": "MetaCreatorsTYO Item",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「※男性アバター向け衣装は以下URLをご覧ください。」に本体URLを確認。https://booth.pm/ja/items/8176384",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8017433",
+    "productId": "8017433",
+    "name": "獏",
+    "aliases": [
+      "Baku｜獏",
+      "Baku",
+      "獏 / Baku"
+    ],
+    "author": "AugmentedDolls",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「メンズ」に本体URLを確認。https://booth.pm/ja/items/8514906",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-3162696",
+    "productId": "3162696",
+    "name": "碼希-まき-",
+    "aliases": [
+      "碼希』 - Maki",
+      "碼希"
+    ],
+    "author": "ひゅうがなつみかん",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「■対応アバター（Men's）※セミ対応」に本体URLを確認。https://booth.pm/ja/items/7110662",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-7684873",
+    "productId": "7684873",
+    "name": "雫峰",
+    "aliases": [
+      "Shizune",
+      "雫峰 -Shizune- "
+    ],
+    "author": "MetaverseCreatorsTYO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「第一弾として「男性アバター向け衣装」をテーマに6名のクリエイターが参加しています（今後プログラム参加クリエイターを幅広く募集予定）」に本体URLを確認。https://booth.pm/ja/items/6515488",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-2174830",
+    "productId": "2174830",
+    "name": "アル",
+    "aliases": [
+      "アル』 - Alu",
+      "Alu"
+    ],
+    "author": "星ワタリノ空",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「対応アバター（Men's）※セミ対応」に本体URLを確認。https://booth.pm/ja/items/5735729",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-3216357",
+    "productId": "3216357",
+    "name": "楽",
+    "aliases": [
+      "楽』 - Gaku",
+      "Gaku"
+    ],
+    "author": "星ワタリノ空",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「対応アバター（Men's）※セミ対応」に本体URLを確認。https://booth.pm/ja/items/5735729",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-2017336",
+    "productId": "2017336",
+    "name": "瀬羽くん",
+    "aliases": [
+      "瀬羽』 - Seba",
+      "瀬羽"
+    ],
+    "author": "Peppermint Angel",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「対応アバター（Men's）※セミ対応」に本体URLを確認。https://booth.pm/ja/items/5735729",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-4993931",
+    "productId": "4993931",
+    "name": "Lapwing",
+    "aliases": [],
+    "author": "久",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8857545",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-6958479",
+    "productId": "6958479",
+    "name": "伊依",
+    "aliases": [
+      "伊依 (Iyori) -",
+      "✤ 伊依  - Iyori  (珍飯亭共通素体-V3版)",
+      "伊依｜",
+      "珍飯亭　共通男性素体（V3）",
+      "Iyori",
+      "伊依/Iyori"
+    ],
+    "author": "珍飯亭",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「メンズアバターの下着って少ないよね！ということで、おしゃれなボクサーパンツを作りました。」に本体URLを確認。https://booth.pm/ja/items/8199081",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-3173031",
+    "productId": "3173031",
+    "name": "ハウラ",
+    "aliases": [
+      "ハウラ』 - Jaula",
+      "JAULA"
+    ],
+    "author": "AugmentedDolls",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「対応アバター（Men's）※セミ対応」に本体URLを確認。https://booth.pm/ja/items/5735729",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-4930863",
+    "productId": "4930863",
+    "name": "【3Dmodel】悪魔リーマン【VRChat avatar】",
+    "aliases": [
+      "※PREFABにグローブ及び靴ナシ"
+    ],
+    "author": "kaibatu2mm LAB",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8549735",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8198897",
+    "productId": "8198897",
+    "name": "釉依",
+    "aliases": [
+      "釉依 -YUI-』 #釉依3D #YUI3D / AC4",
+      "YUI",
+      "釉依 -YUI-"
+    ],
+    "author": "MetaCreatorsTYO Girls",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「※男性アバター向け衣装は以下URLをご覧ください。」に本体URLを確認。https://booth.pm/ja/items/8176384",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6084131",
+    "productId": "6084131",
+    "name": "バートランドReNew",
+    "aliases": [],
+    "author": "空創緑林館BOOTH店",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "・【オリジナル3Dモデル】彼方-Kanata-＆此方-Konata-　 #BLUESTELLA　男性アバター",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-4352025",
+    "productId": "4352025",
+    "name": "ひゅーじょん君 オリジナル3Dモデル -VRChatアバター & VRM & 追加衣装",
+    "aliases": [
+      "Fusion-Kun ひゅーじょん君"
+    ],
+    "author": "ねこ隠しストア",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "✦ ひゅーじょん君 ✦　VRC対応&VRM 男の子アバター",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-4640002",
+    "productId": "4640002",
+    "name": "オリジナル3Dモデル ｢エリオン｣",
+    "aliases": [
+      "｢エリオン｣"
+    ],
+    "author": "かんばしshop",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「第一弾として「男性アバター向け衣装」をテーマに6名のクリエイターが参加しています（今後プログラム参加クリエイターを幅広く募集予定）」に本体URLを確認。https://booth.pm/ja/items/6515488",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6712612",
+    "productId": "6712612",
+    "name": "わん太",
+    "aliases": [],
+    "author": "663-chan Shop",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「第一弾として「男性アバター向け衣装」をテーマに6名のクリエイターが参加しています（今後プログラム参加クリエイターを幅広く募集予定）」に本体URLを確認。https://booth.pm/ja/items/6515488",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-3987935",
+    "productId": "3987935",
+    "name": "加須谷 Kasuya",
+    "aliases": [],
+    "author": "c0untarm",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「◇Men'sAvatar◇」に本体URLを確認。https://booth.pm/ja/items/7018110",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6504220",
+    "productId": "6504220",
+    "name": "#Menno3D",
+    "aliases": [
+      "Menno｜"
+    ],
+    "author": "emudotto.avatar",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「· ﻿· ﻿· ﻿· ✦対応アバター　メンズ✦· ﻿· ﻿· ﻿·」に本体URLを確認。https://booth.pm/ja/items/8766806",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-7744394",
+    "productId": "7744394",
+    "name": "ノイズ（noiz）RE",
+    "aliases": [],
+    "author": "#SASIKIZU",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8857545",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8200327",
+    "productId": "8200327",
+    "name": "断罪（DANZAI）RE",
+    "aliases": [],
+    "author": "#SASIKIZU",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8857545",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6082686",
+    "productId": "6082686",
+    "name": "愛莉",
+    "aliases": [],
+    "author": "キュビクローゼット",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「Mens」に本体URLを確認。https://booth.pm/ja/items/8687322",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-5025863",
+    "productId": "5025863",
+    "name": "エシュラン",
+    "aliases": [],
+    "author": "空創緑林館BOOTH店",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "ちょっぴりミステリアス、それでいてどこかコミカルなお兄さんアバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-5091727",
+    "productId": "5091727",
+    "name": "成犬バルト",
+    "aliases": [],
+    "author": "空創緑林館BOOTH店",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「第一弾として「男性アバター向け衣装」をテーマに6名のクリエイターが参加しています（今後プログラム参加クリエイターを幅広く募集予定）」に本体URLを確認。https://booth.pm/ja/items/6693748",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-4555823",
+    "productId": "4555823",
+    "name": "バルト",
+    "aliases": [],
+    "author": "空創緑林館BOOTH店",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "90年代アニメチックキャラクターをイメージした、救助隊に所属しているアラスカンマラミュートの男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-3940398",
+    "productId": "3940398",
+    "name": "依綱",
+    "aliases": [],
+    "author": "空創緑林館BOOTH店",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "肉体美が自慢の男性アバターモデルです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-3641986",
+    "productId": "3641986",
+    "name": "【3Dmodel】天使リーマン【VRChat avatar】",
+    "aliases": [],
+    "author": "kaibatu2mm LAB",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「· ﻿· ﻿· ﻿· ✦対応アバター　メンズ✦· ﻿· ﻿· ﻿·」に本体URLを確認。https://booth.pm/ja/items/8766806",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6226092",
+    "productId": "6226092",
+    "name": "ヴェルノ",
+    "aliases": [
+      "Velno",
+      "Velno（ヴェルノ）"
+    ],
+    "author": "kai 9",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8857545",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-7374627",
+    "productId": "7374627",
+    "name": "【LilLeo-リルレオ-】オリジナル3Dモデル",
+    "aliases": [],
+    "author": "トノダショップ",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8857545",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-8562330",
+    "productId": "8562330",
+    "name": "輝夜",
+    "aliases": [],
+    "author": "IKUSIA",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「Mens」に本体URLを確認。https://booth.pm/ja/items/8687322",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-5760685",
+    "productId": "5760685",
+    "name": "Alies/荒洲 (アレス)",
+    "aliases": [],
+    "author": "c0untarm",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "軍服風短髪男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-5787485",
+    "productId": "5787485",
+    "name": "むんき -Munkki -",
+    "aliases": [
+      "MARUBODY"
+    ],
+    "author": "なんか作ろうよ",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「デニムセットにはメンズアバターのくうた/+Headを追加しました。」に本体URLを確認。https://booth.pm/ja/items/8168497",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-3550881",
+    "productId": "3550881",
+    "name": "うささき Usasaki / オリジナル3Dモデル",
+    "aliases": [],
+    "author": "もち山金魚",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/7702608",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-3939512",
+    "productId": "3939512",
+    "name": "【オリジナル3D男性モデル】雲隠 雪綱【VRC】",
+    "aliases": [],
+    "author": "demitass store",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「第一弾として「男性アバター向け衣装」をテーマに6名のクリエイターが参加しています（今後プログラム参加クリエイターを幅広く募集予定）」に本体URLを確認。https://booth.pm/ja/items/6515488",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-4004498",
+    "productId": "4004498",
+    "name": "熨斗目（旧モデル）",
+    "aliases": [
+      "のしめ"
+    ],
+    "author": "伊ノ本飯店",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "本体作者が「VRchat用男性アバター「熨斗目(のしめ)」」と明記。熨斗目:Reとは別の旧モデル。https://booth.pm/ja/items/4004498",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6809443",
+    "productId": "6809443",
+    "name": "優世 -Yusei-",
+    "aliases": [
+      "優世 (Yusei)"
+    ],
+    "author": "幾望堂SHOP",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "やや筋肉質で怪しいサラリーマンの男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6836210",
+    "productId": "6836210",
+    "name": "Toah -トア-",
+    "aliases": [
+      "トア｜"
+    ],
+    "author": "ciroro",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "仮想現実で生きる、どこか儚げな少年です",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8804121",
+    "productId": "8804121",
+    "name": "ノクセン",
+    "aliases": [
+      "Noxen",
+      "Noxen（ノクセン）"
+    ],
+    "author": "kai 9",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8857545",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8346109",
+    "productId": "8346109",
+    "name": "にゃにゃまる",
+    "aliases": [],
+    "author": "kai 9",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8857545",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-8376374",
+    "productId": "8376374",
+    "name": "Callsign:[Gifter]",
+    "aliases": [
+      "Gifter"
+    ],
+    "author": "竹ノ子式",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "Vrchatでの利用を想定した3Dモデル男性アバターです。",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8699929",
+    "productId": "8699929",
+    "name": "ルティ -Ruty- / オリジナル3Dモデル",
+    "aliases": [
+      "Ruty「ルティ」&Latte「ラテ」Neobody",
+      "ルティ"
+    ],
+    "author": "Rotus＆RotaLa",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "「少年店主」をイメージした男の子アバターです。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8733827",
+    "productId": "8733827",
+    "name": "ラテ",
+    "aliases": [
+      "Ruty「ルティ」&Latte「ラテ」Neobody",
+      "ルティ"
+    ],
+    "author": "BlueCloud",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "可愛さと好奇心旺盛な、天真爛漫な性格が魅力の少年アバター！",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-3882280",
+    "productId": "3882280",
+    "name": "ノウル",
+    "aliases": [],
+    "author": "Xelevia_Industry",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "犬耳の男の子です。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-7577702",
+    "productId": "7577702",
+    "name": "リウル",
+    "aliases": [
+      "Liul",
+      "Liul（リウル）"
+    ],
+    "author": "kai 9",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8549735",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6584744",
+    "productId": "6584744",
+    "name": "オリジナル3Dモデル ~ネコチヤン~ #ネコチヤン3D #川井商店",
+    "aliases": [
+      "~ネコチヤン~"
+    ],
+    "author": "川井商店",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/8549735",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-3190100",
+    "productId": "3190100",
+    "name": "Grus",
+    "aliases": [],
+    "author": "久",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「デニムセットにはメンズアバターのくうた/+Headを追加しました。」に本体URLを確認。https://booth.pm/ja/items/8168497",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-5941406",
+    "productId": "5941406",
+    "name": "オリジナル3Dアバター：Lowtus（ロータス）",
+    "aliases": [],
+    "author": "onair",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「デニムセットにはメンズアバターのくうた/+Headを追加しました。」に本体URLを確認。https://booth.pm/ja/items/8168497",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-6382745",
+    "productId": "6382745",
+    "name": "山羊のメア -Goat Mea-",
+    "aliases": [],
+    "author": "masui",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「デニムセットにはメンズアバターのくうた/+Headを追加しました。」に本体URLを確認。https://booth.pm/ja/items/8168497",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-7806994",
+    "productId": "7806994",
+    "name": "慧 -Kei- オリジナル3Dモデル",
+    "aliases": [
+      "kei「慧"
+    ],
+    "author": "rio3d",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "黒髪眼鏡の男の子「慧」です。主にVRChat向けにご利用できます。",
+    "ageGroup": "少年",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-7290300",
+    "productId": "7290300",
+    "name": "【3D model】シンカイヒトウオ【VRChat avatar】",
+    "aliases": [],
+    "author": "kaibatu2mm LAB",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/7595960",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-8407161",
+    "productId": "8407161",
+    "name": "しまざきくん",
+    "aliases": [],
+    "author": "MITUBAのクローバー",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【メンズ】」に本体URLを確認。https://booth.pm/ja/items/7595960",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6373683",
+    "productId": "6373683",
+    "name": "りりか",
+    "aliases": [
+      "りりか」-ririka-"
+    ],
+    "author": "IKUSIA",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「🖤MENS🖤」に本体URLを確認。https://booth.pm/ja/items/7540626",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-6831821",
+    "productId": "6831821",
+    "name": "しらつめ Shiratsume / オリジナル3Dモデル",
+    "aliases": [],
+    "author": "HARUNOPUPU",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「🖤MENS🖤」に本体URLを確認。https://booth.pm/ja/items/7540626",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-7928592",
+    "productId": "7928592",
+    "name": "ひきくまりのクマリ",
+    "aliases": [],
+    "author": "STUDIO JINGO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「Mens」に本体URLを確認。https://booth.pm/ja/items/8546901",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-8325804",
+    "productId": "8325804",
+    "name": "海咲-Misaki-",
+    "aliases": [],
+    "author": "VISION TOKYO",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「Mens」に本体URLを確認。https://booth.pm/ja/items/8546901",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-4825073",
+    "productId": "4825073",
+    "name": "Lasyusha〈ラシューシャ〉",
+    "aliases": [],
+    "author": "Keenoo",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「Mens」に本体URLを確認。https://booth.pm/ja/items/8546901",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-7748790",
+    "productId": "7748790",
+    "name": "PerroBoomWorm",
+    "aliases": [],
+    "author": "新見出力所",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【男性アバター】」に本体URLを確認。https://booth.pm/ja/items/7825347",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-6091717",
+    "productId": "6091717",
+    "name": "nial",
+    "aliases": [],
+    "author": "arsk",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「【男性アバター】」に本体URLを確認。https://booth.pm/ja/items/7825347",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-4667400",
+    "productId": "4667400",
+    "name": "萌",
+    "aliases": [
+      "Moe(萌)"
+    ],
+    "author": "キュビクローゼット",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「Male:」に本体URLを確認。https://booth.pm/ja/items/7753636",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-7328789",
+    "productId": "7328789",
+    "name": "イチゴ",
+    "aliases": [
+      "ICHIGO「イチゴ"
+    ],
+    "author": "はみにの立体箱",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「Male:」に本体URLを確認。https://booth.pm/ja/items/7753636",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-6731806",
+    "productId": "6731806",
+    "name": "アデノフォラ",
+    "aliases": [],
+    "author": "四拾弐重工:販売所",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「男性アバター向けのチューブトップとブーツカットパンツのコーデです。」に本体URLを確認。https://booth.pm/ja/items/6274372",
+    "ageGroup": "未分類",
+    "review": "verified"
+  },
+  {
+    "id": "avatar-8426340",
+    "productId": "8426340",
+    "name": "SiuSiu / オリジナル3Dモデル",
+    "aliases": [],
+    "author": "ADPX",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "衣装作者の男性向け対応対象「⭐男性アバター向けはこちら」に本体URLを確認。https://booth.pm/ja/items/8947070",
+    "ageGroup": "未分類",
+    "review": "candidate"
+  },
+  {
+    "id": "avatar-4351466",
+    "productId": "4351466",
+    "name": "佐々斗勇輝",
+    "aliases": [],
+    "author": "663-chan Shop",
+    "bodyId": null,
+    "bodyEvidence": "",
+    "genderEvidence": "実はみつあみ、狼耳としっぽが特徴の男の子、佐々斗勇輝くんです。",
+    "ageGroup": "少年",
+    "review": "verified"
+  }
+]

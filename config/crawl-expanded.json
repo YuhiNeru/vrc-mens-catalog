@@ -1,0 +1,30 @@
+{
+  "products": [
+    "https://hyuuganatu.booth.pm/items/5260363",
+    "https://hotogiya.booth.pm/items/4897493",
+    "https://booth.pm/ja/items/6813995",
+    "https://studioyono.booth.pm/items/6970249",
+    "https://booth.pm/ja/items/8086741",
+    "https://on-air.booth.pm/items/6957623",
+    "https://booth.pm/ja/items/7924603",
+    "https://booth.pm/ja/items/7423591"
+  ],
+  "discovery": [
+    "https://booth.pm/ja/search/%E7%8B%9B%E4%B9%83%20%E8%A1%A3%E8%A3%85?sort=new&page=1",
+    "https://booth.pm/ja/search/%E3%81%8F%E3%81%86%E3%81%9F%20%E8%A1%A3%E8%A3%85?sort=new&page=1",
+    "https://booth.pm/ja/search/%E5%BD%BC%E6%96%B9%20%E8%A1%A3%E8%A3%85?sort=new&page=1",
+    "https://booth.pm/ja/search/%E6%96%91%E9%9C%9E%20%E8%A1%A3%E8%A3%85?sort=new&page=1",
+    "https://booth.pm/ja/search/%E5%A3%AB%E5%A0%82%20%E8%A1%A3%E8%A3%85?sort=new&page=1",
+    "https://booth.pm/ja/search/Alu%C3%A9%20%E8%A1%A3%E8%A3%85?sort=new&page=1",
+    "https://booth.pm/ja/search/%E6%B3%A3%E5%A4%9C%20%E8%A1%A3%E8%A3%85?sort=new&page=1",
+    "https://booth.pm/ja/search/%E7%86%A8%E6%96%97%E7%9B%AE%20%E8%A1%A3%E8%A3%85?sort=new&page=1",
+    "https://booth.pm/ja/search/%E7%8B%9B%E4%B9%83%20%E8%A1%A3%E8%A3%85?sort=new&page=2",
+    "https://booth.pm/ja/search/%E3%81%8F%E3%81%86%E3%81%9F%20%E8%A1%A3%E8%A3%85?sort=new&page=2"
+  ],
+  "intervalMs": 1000,
+  "maxRequests": 500,
+  "maxProducts": 400,
+  "concurrency": 1,
+  "refreshDays": 7,
+  "discoveryLimit": 60
+}

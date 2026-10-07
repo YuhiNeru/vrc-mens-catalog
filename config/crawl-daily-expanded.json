@@ -1,0 +1,23 @@
+{
+    "maxProducts":  10000,
+    "refreshDays":  7,
+    "products":  [
+
+                 ],
+    "concurrency":  1,
+    "maxRequests":  500,
+    "intervalMs":  3000,
+    "discoveryLimit":  60,
+    "discovery":  [
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E3%81%8F%E3%81%86%E3%81%9F\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E7%8B%9B%E4%B9%83\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E6%96%91%E9%9C%9E\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E5%A3%AB%E5%A0%82\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=Alu%C3%A9\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E6%B3%A3%E5%A4%9C\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E7%86%A8%E6%96%97%E7%9B%AE%3ARe\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E5%BD%BC%E6%96%B9\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E3%82%A2%E3%83%AB%E3%82%A8\u0026sort=new",
+                      "https://booth.pm/ja/browse/3D%E8%A1%A3%E8%A3%85?q=%E7%86%A8%E6%96%97%E7%9B%AE\u0026sort=new"
+                  ]
+}

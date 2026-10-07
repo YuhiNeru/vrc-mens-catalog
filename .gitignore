@@ -1,0 +1,16 @@
+node_modules/
+.npm-cache/
+.wrangler/
+dist/
+data/
+!data/.gitkeep
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.aws/
+*.pem
+*.pfx
+*.log
+test-results/

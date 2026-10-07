@@ -1,0 +1,5 @@
+{
+ "products":["https://hyuuganatu.booth.pm/items/5260363","https://hotogiya.booth.pm/items/4897493","https://ki-necave.booth.pm/items/5213501","https://studioyono.booth.pm/items/8434318"],
+ "discovery":["https://booth.pm/ja/search/%E7%8B%9B%E4%B9%83%20%E8%A1%A3%E8%A3%85?sort=new","https://booth.pm/ja/search/%E3%81%8F%E3%81%86%E3%81%9F%20%E8%A1%A3%E8%A3%85?sort=new"],
+ "intervalMs":3000,"maxRequests":30,"concurrency":1,"refreshDays":7,"discoveryLimit":10
+}

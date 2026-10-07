@@ -1,0 +1,6 @@
+{
+  "intervalMs": 1000,
+  "maxRequests": 12000,
+  "maxPagesPerSource": 100,
+  "maxProducts": 10000
+}

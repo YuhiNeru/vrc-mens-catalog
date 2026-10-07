@@ -1,0 +1,80 @@
+{
+  "source": "ユーザー指定のVRCFinderを参考にした次回収集候補。商品IDは参照画像URL由来の仮候補で、BOOTH本文で未確認。",
+  "candidates": [
+    {
+      "id": "bokusei",
+      "name": "墨惺",
+      "kind": "avatar",
+      "referenceUrl": "https://vrcfinder.net/ja/model/bokusei/",
+      "candidateProductIdFromImage": "5727810",
+      "status": "needs-booth-validation",
+      "checks": [
+        "作者の本体商品ページと正式名",
+        "男性向け分類の根拠",
+        "販売状態",
+        "共通素体と互換条件",
+        "購入バリエーションと対応衣装"
+      ]
+    },
+    {
+      "id": "plushead",
+      "name": "+Head",
+      "kind": "body-candidate",
+      "referenceUrl": "https://vrcfinder.net/ja/model/plushead/",
+      "candidateProductIdFromImage": "5844725",
+      "status": "needs-booth-validation",
+      "checks": [
+        "作者の本体商品ページと正式名",
+        "男性向け分類の根拠",
+        "販売状態",
+        "共通素体と互換条件",
+        "購入バリエーションと対応衣装"
+      ]
+    },
+    {
+      "id": "kalne",
+      "name": "カルネ",
+      "kind": "avatar",
+      "referenceUrl": "https://vrcfinder.net/ja/model/kalne/",
+      "candidateProductIdFromImage": "5142722",
+      "status": "needs-booth-validation",
+      "checks": [
+        "作者の本体商品ページと正式名",
+        "男性向け分類の根拠",
+        "販売状態",
+        "共通素体と互換条件",
+        "購入バリエーションと対応衣装"
+      ]
+    },
+    {
+      "id": "rei",
+      "name": "怜",
+      "kind": "avatar",
+      "referenceUrl": "https://vrcfinder.net/ja/model/rei/",
+      "candidateProductIdFromImage": "5788427",
+      "status": "needs-booth-validation",
+      "checks": [
+        "作者の本体商品ページと正式名",
+        "男性向け分類の根拠",
+        "販売状態",
+        "共通素体と互換条件",
+        "購入バリエーションと対応衣装"
+      ]
+    },
+    {
+      "id": "licht",
+      "name": "凛仁",
+      "kind": "avatar",
+      "referenceUrl": "https://vrcfinder.net/ja/model/licht/",
+      "candidateProductIdFromImage": "7430852",
+      "status": "needs-booth-validation",
+      "checks": [
+        "作者の本体商品ページと正式名",
+        "男性向け分類の根拠",
+        "販売状態",
+        "共通素体と互換条件",
+        "購入バリエーションと対応衣装"
+      ]
+    }
+  ]
+}

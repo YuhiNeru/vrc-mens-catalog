@@ -1,0 +1,1545 @@
+[
+  {
+    "entity": "product",
+    "key": "6970249",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "hanka",
+    "patch": {
+      "author": "StudioYONO",
+      "review": "verified",
+      "genderEvidence": "本体ページの正式名・作者・商品IDを確認。衣装作者StudioYONOの8434318の男性向け対応一覧を根拠に分類確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8086741",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "shidou",
+    "patch": {
+      "author": "MetaverseCreatorsTYO",
+      "review": "verified",
+      "genderEvidence": "本体ページの正式名・作者・商品IDを確認。衣装作者StudioYONOの8434318の男性向け対応一覧を根拠に分類確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "6957623",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "alue",
+    "patch": {
+      "author": "onair",
+      "review": "verified",
+      "genderEvidence": "本体ページの正式名・作者・商品IDを確認。衣装作者StudioYONOの8434318の男性向け対応一覧を根拠に分類確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "7924603",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "nakiya",
+    "patch": {
+      "author": "Keenoo",
+      "review": "verified",
+      "genderEvidence": "本体ページの正式名・作者・商品IDを確認。衣装作者StudioYONOの8434318の男性向け対応一覧を根拠に分類確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "7423591",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "noshime",
+    "patch": {
+      "author": "伊ノ本飯店",
+      "review": "verified",
+      "genderEvidence": "本体ページで男性アバターと明記。正式名・作者・商品IDを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "6813995",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "kanata",
+    "patch": {
+      "author": "BLUESTELLA",
+      "review": "verified",
+      "genderEvidence": "本体ページで男の子アバターと明記。正式名・作者BLUESTELLA・商品IDを確認。",
+      "ageGroup": "少年"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8946965",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8946965:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8946965:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8946965:avatar:shidou",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "士堂専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「士堂専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8941463",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941463:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941463:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941463:avatar:shidou",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "士堂専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「士堂専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941463:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "アルエ専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「アルエ専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8941407",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941407:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941407:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941407:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "彼方＆此方専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「彼方＆此方専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941407:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8941407:avatar:shidou",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "士堂 専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「士堂 専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8842844",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842844:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃/Komano"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃/Komano」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842844:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた/Kuuta"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた/Kuuta」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842844:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "彼方/Kanata"
+      ],
+      "evidence": "販売ページの対象バリエーション「彼方/Kanata」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842844:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞/Hanka"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞/Hanka」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842844:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "アルエ/Alué"
+      ],
+      "evidence": "販売ページの対象バリエーション「アルエ/Alué」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842844:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "泣夜/Nakiya"
+      ],
+      "evidence": "販売ページの対象バリエーション「泣夜/Nakiya」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8868899",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8868899:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8870607",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8870607:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8872714",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8872714:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8916402",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8916402:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃 - Komano"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃 - Komano」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8916402:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "彼方 - Kanata"
+      ],
+      "evidence": "販売ページの対象バリエーション「彼方 - Kanata」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8916402:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞 - Hanka"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞 - Hanka」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8916402:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "アルエ - Alue"
+      ],
+      "evidence": "販売ページの対象バリエーション「アルエ - Alue」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8916402:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "泣夜 - Nakiya"
+      ],
+      "evidence": "販売ページの対象バリエーション「泣夜 - Nakiya」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8900508",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8900508:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "월백도포(月白道袍) Komano"
+      ],
+      "evidence": "販売ページの対象バリエーション「월백도포(月白道袍) Komano」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8900508:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "월백도포(月白道袍) Hanka"
+      ],
+      "evidence": "販売ページの対象バリエーション「월백도포(月白道袍) Hanka」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8890992",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8890992:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "🍔Komano🍔"
+      ],
+      "evidence": "販売ページの対象バリエーション「🍔Komano🍔」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8890992:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "🍔Hanka🍔"
+      ],
+      "evidence": "販売ページの対象バリエーション「🍔Hanka🍔」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8890992:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "🍔Alué (+Head)🍔"
+      ],
+      "evidence": "販売ページの対象バリエーション「🍔Alué (+Head)🍔」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8835448",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8835448:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃 komano対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃 komano対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8835448:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "彼方 kanata 対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「彼方 kanata 対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8835448:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "Alue （+head） 対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「Alue （+head） 対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8881322",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8881322:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "komano"
+      ],
+      "evidence": "販売ページの対象バリエーション「komano」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8881322:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "kuuta"
+      ],
+      "evidence": "販売ページの対象バリエーション「kuuta」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8881322:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "kanata"
+      ],
+      "evidence": "販売ページの対象バリエーション「kanata」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8881322:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "hanka"
+      ],
+      "evidence": "販売ページの対象バリエーション「hanka」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8787372",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8787372:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃-Komano-"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃-Komano-」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8787372:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞-Hanka-"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞-Hanka-」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8868694",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8868694:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8868694:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8868694:avatar:shidou",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "士堂専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「士堂専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8868694:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "アルエ専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「アルエ専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8865077",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8865077:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8865077:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8865077:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "彼方＆此方専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「彼方＆此方専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8865077:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞・士堂専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞・士堂専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8865077:avatar:shidou",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞・士堂専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞・士堂専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8865077:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "アルエ専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「アルエ専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8865077:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "泣夜専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「泣夜専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8792920",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8792920:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "Komano"
+      ],
+      "evidence": "販売ページの対象バリエーション「Komano」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8792920:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "Kuuta"
+      ],
+      "evidence": "販売ページの対象バリエーション「Kuuta」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8792920:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "Kanata"
+      ],
+      "evidence": "販売ページの対象バリエーション「Kanata」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8792920:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "Hanka"
+      ],
+      "evidence": "販売ページの対象バリエーション「Hanka」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8792920:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "PlusHead(Alue，Kalne)"
+      ],
+      "evidence": "販売ページの対象バリエーション「PlusHead(Alue，Kalne)」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8792920:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "Nakiya"
+      ],
+      "evidence": "販売ページの対象バリエーション「Nakiya」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8868002",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8868002:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "✦狛乃 Komano✦"
+      ],
+      "evidence": "販売ページの対象バリエーション「✦狛乃 Komano✦」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8868002:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "✦くうた Kuuta✦"
+      ],
+      "evidence": "販売ページの対象バリエーション「✦くうた Kuuta✦」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8868002:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "✦斑霞 Hanka✦"
+      ],
+      "evidence": "販売ページの対象バリエーション「✦斑霞 Hanka✦」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8790961",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8790961:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "KOMANO 狛乃対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「KOMANO 狛乃対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8790961:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "KANATA 彼方対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「KANATA 彼方対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8790961:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "HANKA 斑霞対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「HANKA 斑霞対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8790961:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "PlusHead ( +Head, 墨惺, アルエ, トネール ETC ) 対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「PlusHead ( +Head, 墨惺, アルエ, トネール ETC ) 対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8790961:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "NAKIYA 泣夜対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「NAKIYA 泣夜対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8681916",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8681916:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃 / Komano"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃 / Komano」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8862563",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8862563:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8862563:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8862563:avatar:alue",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "Alue対応"
+      ],
+      "evidence": "販売ページの対象バリエーション「Alue対応」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8843030",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8843030:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "For Komano"
+      ],
+      "evidence": "販売ページの対象バリエーション「For Komano」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8843030:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "For Hanka"
+      ],
+      "evidence": "販売ページの対象バリエーション「For Hanka」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8878142",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8878142:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた - Kuuta"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた - Kuuta」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8878142:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "泣夜 - Nakiya"
+      ],
+      "evidence": "販売ページの対象バリエーション「泣夜 - Nakiya」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8878118",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8878118:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた - Kuuta"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた - Kuuta」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8878118:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "泣夜 - Nakiya"
+      ],
+      "evidence": "販売ページの対象バリエーション「泣夜 - Nakiya」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8878061",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8878061:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた - Kuuta"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた - Kuuta」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8878061:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "泣夜 - Nakiya"
+      ],
+      "evidence": "販売ページの対象バリエーション「泣夜 - Nakiya」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8873109",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8873109:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8873109:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8844476",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8844476:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "KOMANO"
+      ],
+      "evidence": "販売ページの対象バリエーション「KOMANO」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8844476:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "KUUTA"
+      ],
+      "evidence": "販売ページの対象バリエーション「KUUTA」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8844476:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "KANATA"
+      ],
+      "evidence": "販売ページの対象バリエーション「KANATA」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8844476:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "HANKA"
+      ],
+      "evidence": "販売ページの対象バリエーション「HANKA」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8842695",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842695:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842695:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8842695:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞専用"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞専用」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8836236",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8836236:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "komano"
+      ],
+      "evidence": "販売ページの対象バリエーション「komano」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8836236:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "kuuta"
+      ],
+      "evidence": "販売ページの対象バリエーション「kuuta」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8836236:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "kanata&yuri"
+      ],
+      "evidence": "販売ページの対象バリエーション「kanata&yuri」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8836236:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "hanka"
+      ],
+      "evidence": "販売ページの対象バリエーション「hanka」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8836236:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "nakiya"
+      ],
+      "evidence": "販売ページの対象バリエーション「nakiya」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8803032",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8803032:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃(Komano)"
+      ],
+      "evidence": "販売ページの対象バリエーション「狛乃(Komano)」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8803032:avatar:kuuta",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "くうた(Kuuta)"
+      ],
+      "evidence": "販売ページの対象バリエーション「くうた(Kuuta)」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8803032:avatar:kanata",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "彼方(Kanata)"
+      ],
+      "evidence": "販売ページの対象バリエーション「彼方(Kanata)」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8803032:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞(Hanka)"
+      ],
+      "evidence": "販売ページの対象バリエーション「斑霞(Hanka)」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8803032:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "泣夜(Nakiya)"
+      ],
+      "evidence": "販売ページの対象バリエーション「泣夜(Nakiya)」と商品説明を確認。名称だけの言及・将来対応を除外。導入条件・必要ツールは販売ページを確認。"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8937666",
+    "patch": {
+      "kind": "clothing",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8937666:avatar:komano",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "狛乃⛪👼Komano"
+      ],
+      "evidence": "作者の初期対応一覧と対象バリエーションを確認。Aluéのみセミ対応の注意書きあり。MA shape changer等の導入条件は販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8937666:avatar:hanka",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "斑霞⛪👼Hanka"
+      ],
+      "evidence": "作者の初期対応一覧と対象バリエーションを確認。Aluéのみセミ対応の注意書きあり。MA shape changer等の導入条件は販売ページを確認。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8937666:avatar:alue",
+    "patch": {
+      "fit": "semi",
+      "review": "verified",
+      "variantNames": [
+        "カルネ(+Head/アルエ)⛪👼Kalne/Alue"
+      ],
+      "evidence": "作者の説明でAlué版はセミ対応としてカルネ版に同梱と明記。MA shape changer等の設定に注意。"
+    }
+  },
+  {
+    "entity": "compatibility",
+    "key": "8937666:avatar:nakiya",
+    "patch": {
+      "fit": "full",
+      "review": "verified",
+      "variantNames": [
+        "泣夜⛪👼Nakiya"
+      ],
+      "evidence": "作者の初期対応一覧と対象バリエーションを確認。Aluéのみセミ対応の注意書きあり。MA shape changer等の導入条件は販売ページを確認。"
+    }
+  }
+]

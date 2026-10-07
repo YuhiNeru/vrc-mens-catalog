@@ -1,0 +1,117 @@
+[
+  {
+    "entity": "avatar",
+    "key": "mao",
+    "patch": {
+      "name": "真央",
+      "aliases": [
+        "Mao"
+      ],
+      "genderEvidence": "衣装作者が真央の男性向け版を明記「Mao は今回は男性用の衣装ですので、Breasts のシェイプキーには対応していません」。男性・女性の両体型を想定するモデルとして、男性向け対応版を掲載。https://booth.pm/ja/items/8361078",
+      "bodyId": null,
+      "bodyEvidence": "",
+      "review": "verified",
+      "ageGroup": "未分類"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "6846646",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "haolan",
+    "patch": {
+      "name": "ハオラン",
+      "aliases": [
+        "HAOLAN"
+      ],
+      "genderEvidence": "衣装作者の対応アバター一覧「メンズ male Aカテゴリ」に本体URL付きでHAOLAN-ハオラン-を掲載。https://booth.pm/ja/items/6429701",
+      "bodyId": null,
+      "bodyEvidence": "",
+      "review": "verified",
+      "ageGroup": "未分類"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "3818504",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "lumiere",
+    "patch": {
+      "name": "ルミエール",
+      "aliases": [
+        "Lumiere"
+      ],
+      "genderEvidence": "本体作者が「貴族風の少年アバターです」と明記。https://booth.pm/ja/items/5844725",
+      "bodyId": "plushead",
+      "bodyEvidence": "作者の本体商品説明が+Head共通素体を採用すると明記。https://booth.pm/ja/items/5844725（素体 https://booth.pm/ja/items/5153266）",
+      "review": "verified",
+      "ageGroup": "少年"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5844725",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "bokusei",
+    "patch": {
+      "name": "墨惺",
+      "aliases": [
+        "Bokusei"
+      ],
+      "genderEvidence": "衣装作者のMale Version対象欄に正式名と本体URL付きで掲載。https://booth.pm/ja/items/8434318",
+      "bodyId": "plushead",
+      "bodyEvidence": "作者の本体商品説明が+Head共通素体を採用すると明記。https://booth.pm/ja/items/5727810（素体 https://booth.pm/ja/items/5153266）",
+      "review": "verified",
+      "ageGroup": "未分類"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "5727810",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  },
+  {
+    "entity": "avatar",
+    "key": "suzuya",
+    "patch": {
+      "name": "紗夜",
+      "aliases": [
+        "Suzuya"
+      ],
+      "genderEvidence": "作者がメンズアバター用と明記する衣装の購入版・対応一覧に、紗夜と本体URLを掲載。https://booth.pm/ja/items/8199081",
+      "bodyId": null,
+      "bodyEvidence": "",
+      "review": "verified",
+      "ageGroup": "未分類"
+    }
+  },
+  {
+    "entity": "product",
+    "key": "8415837",
+    "patch": {
+      "kind": "avatar",
+      "review": "verified"
+    }
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "products": ["https://booth.pm/ja/items/6813995"],
+  "discovery": [],
+  "intervalMs": 1000,
+  "maxRequests": 500,
+  "maxProducts": 1,
+  "concurrency": 1,
+  "refreshDays": 7,
+  "discoveryLimit": 0
+}

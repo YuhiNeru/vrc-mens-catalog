@@ -1,0 +1,18 @@
+{
+  "targets": [
+    {"id":"mao","query":"真央"},
+    {"id":"haolan","query":"ハオラン"},
+    {"id":"plushead","query":"PlusHead"},
+    {"id":"suzuya","query":"紗夜"},
+    {"id":"bokusei","query":"墨惺"},
+    {"id":"lumiere","query":"ルミエール"},
+    {"id":"uzuruha","query":"ウズルハ"},
+    {"id":"techie","query":"テッキー"},
+    {"id":"ashel","query":"アシェル"},
+    {"id":"sarvadarsa","query":"サルヴァダルシャ"},
+    {"id":"ay6","query":"AY6"}
+  ],
+  "maxProducts": 60,
+  "intervalMs": 3000,
+  "maxRequests": 90
+}

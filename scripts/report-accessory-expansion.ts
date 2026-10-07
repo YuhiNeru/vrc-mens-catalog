@@ -1,0 +1,12 @@
+﻿import fs from 'node:fs/promises';
+import {publicCatalog} from '../src/shared/model';
+const data=JSON.parse(await fs.readFile('data/catalog.json','utf8'));
+const added=JSON.parse(await fs.readFile('data/accessory-expansion-additions.json','utf8'));
+const crawl=JSON.parse(await fs.readFile('data/accessory-expansion-crawl.json','utf8'));
+const items=publicCatalog(data).products.filter(p=>p.kind==='accessory');
+const baseline={'靴・レッグウェア':63,'ピアス':26,'ネイル・指輪':19,'マスク':10,'首元アクセサリー':7,'眼鏡・ゴーグル':5,'帽子':5,'ハーネス':4,'手袋':3,'耳・尻尾':3,'口元小物':2,'バッグ':2,'ブレスレット':1};
+const counts=new Map();for(const p of items)counts.set(p.category,(counts.get(p.category)??0)+1);
+const stamp=new Date().toLocaleString('ja-JP',{timeZone:'Asia/Tokyo'});
+const lines=[`# 小物売り場の追加収集・再分類`, ``, `確認日時：${stamp} JST`, ``, `28検索から新規候補${crawl.queue.length}件。取得成功${crawl.success}件、失敗${crawl.failure}件、${crawl.requests}リクエスト。3秒間隔、robots.txt準拠。`, ``, `今回${added.added.length}件追加。小物150件 → ${items.length}件。作者の対応一覧・専用Prefab・販売対象版を確認。撮影モデルの名前だけの記載や衣装セットは追加対象から除外。`, ``, `| 売り場 | 改善前 | 改善後 |`, `|---|---:|---:|`, ...[...counts].sort((a,b)=>b[1]-a[1]).map(([name,count])=>`| ${name} | ${baseline[name]??0} | ${count} |`), ``, `## 掲載商品と根拠`, ``, `画像はBOOTH画像URLを直接使用。スキは取得時点の値。`, ``, `| 商品 | 売り場 | 対応先 | 取得元 | 商品取得日時（UTC） |`, `|---|---|---|---|---|`, ...added.added.map(p=>`| ${p.name.replaceAll('|','／')} | ${p.category} | ${p.targets.join(', ')} | [BOOTH](${p.url}) | ${p.fetchedAt} |`), ``, `## 検索起点`, ``, ...crawl.sources.map(s=>`- [${s.query}](${s.url})（取得：${s.at} UTC）`), ``, `収集チェックポイント：data/accessory-expansion-crawl.json。レビュー：config/reviewed-accessory-expansion.json。`];
+await fs.writeFile('docs/accessory-expansion-2026-10-08.md',lines.join('\n'));
+console.log(JSON.stringify({total:items.length,added:added.added.length,counts:Object.fromEntries(counts)}));
