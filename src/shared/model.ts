@@ -46,6 +46,7 @@ export type Override = z.infer<typeof overrideSchema>;
 export type Catalog = ImportData & {overrides:Override[]};
 export const relationKey = (r:Compatibility) => `${r.productId}:${r.targetType}:${r.targetId}`;
 
+const splitNailRing=(category:string,name:string)=>category==='ネイル・指輪'?(/ネイル|nail/i.test(name)||!/指輪|リング|rings?/i.test(name)?'ネイル':'指輪'):category;
 export function effective(data:Catalog):Catalog {
   const products = new Map(data.products.map(p => {const classification=accessoryClassifications.find(c=>c.id===p.id);return [p.id,{...p,...(classification?{kind:'accessory' as const,category:classification.category}:{})}];}));
   const avatars = new Map(data.avatars.map(a => [a.id,{...a}]));
@@ -59,7 +60,7 @@ export function effective(data:Catalog):Catalog {
       relations.set(o.key,compatibilitySchema.parse({...base,...o.patch}));
     }
   }
-  return refreshFloorTags({...data,products:[...products.values()],avatars:[...avatars.values()],compatibility:[...relations.values()]});
+  return refreshFloorTags({...data,products:[...products.values()].map(p=>({...p,category:splitNailRing(p.category,p.name)})),avatars:[...avatars.values()],compatibility:[...relations.values()]});
 }
 export function materializeCatalogTags(data:Catalog){
  const tags=new Map(effective(data).products.map(p=>[p.id,p.catalogTags]));

@@ -12,7 +12,7 @@ test('分類済み小物を衣装から除き、小物一覧・アバター内�
  for(const id of ['7475223','5359242'])store.compatibility.push({productId:id,targetType:'avatar',targetId:'kuuta',fit:'full',review:'verified',evidence:'作者の対象版を確認',variantNames:[]});
  const rows:Record<string,unknown[]>={products:store.products,avatars:store.avatars,bodies:[],compatibility:store.compatibility,crawl_runs:[]};
  const db={prepare(sql:string){return{async all(){if(sql.includes('FROM overrides'))return{results:[]};const table=sql.match(/FROM (\w+)/)![1];return{results:rows[table].map(payload=>({payload:JSON.stringify(payload)}))};}};}}as unknown as D1Database;
- const env={DB:db,ASSETS:{}as Fetcher};
+ const env={DB:db,ASSETS:{}as Fetcher,CATALOG_CACHE_MS:'0'};
  const get=async(path:string)=>(await handle(new Request('https://example.test'+path),env)).json()as Promise<any>;
  assert.deepEqual((await get('/api/products')).items.map((p:any)=>p.id),['7475223']);
  const accessories=await get('/api/products?kind=accessory');assert.equal(accessories.total,1);assert.equal(accessories.items[0].category,'靴・レッグウェア');

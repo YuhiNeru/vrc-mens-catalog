@@ -1,19 +1,20 @@
 <svg xmlns="http://www.w3.org/2000/svg">
-  <!-- Shared 64-unit pictograms: one ink, rounded strokes, no gendered figures. -->
-  <symbol id="harness" viewBox="0 0 64 64"><path d="M22 12v12l-6 26h32l-6-26V12M22 24h20M19 36h26M24 50l8-14 8 14M25 12l7 12 7-12"/><rect x="28" y="22" width="8" height="5" rx="1"/></symbol>
-  <symbol id="necklace" viewBox="0 0 64 64"><path d="M16 16c-1 17 4 28 16 32 12-4 17-15 16-32M23 14h18"/><path d="m32 43 6 6-6 7-6-7z"/></symbol>
-  <symbol id="glasses" viewBox="0 0 64 64"><rect x="9" y="27" width="19" height="15" rx="6"/><rect x="36" y="27" width="19" height="15" rx="6"/><path d="M28 32q4-4 8 0M9 30l4-11h7M55 30l-4-11h-7"/></symbol>
-  <symbol id="earring" viewBox="0 0 64 64"><path d="M28 24v-6a6 6 0 0 1 12 0v4M35 26a14 14 0 1 1-9 1"/><circle cx="28" cy="24" r="2.5"/><path d="M23 38a8 8 0 0 0 11 9"/></symbol>
-  <symbol id="shoe" viewBox="0 0 64 64"><path d="M11 25v22h44v-7c0-4-4-6-9-7l-13-5-7-10h-6v10zM11 42h44M31 25l-4 6M37 28l-4 6M43 31l-4 6"/></symbol>
-  <symbol id="bag" viewBox="0 0 64 64"><rect x="15" y="23" width="34" height="31" rx="3"/><path d="M24 26V18a8 8 0 0 1 16 0v8M15 33h34"/><rect x="28" y="31" width="8" height="7" rx="1"/></symbol>
-  <symbol id="bracelet" viewBox="0 0 64 64"><ellipse cx="32" cy="33" rx="19" ry="16"/><path d="M13 33v6c0 9 9 16 19 16s19-7 19-16v-6M19 22l5 5M40 27l5-5"/><rect x="27" y="15" width="10" height="8" rx="2"/></symbol>
-  <symbol id="nail-ring" viewBox="0 0 64 64"><path d="M13 48V25a7 7 0 0 1 14 0v23M13 36h14"/><rect x="17" y="23" width="6" height="10" rx="3"/><circle cx="44" cy="41" r="11"/><path d="m44 16 6 7-6 7-6-7z"/></symbol>
-  <symbol id="hat" viewBox="0 0 64 64"><path d="m20 38 3-22h18l3 22M20 32h24M11 38h42v8H11z"/></symbol>
-  <symbol id="ears-tail" viewBox="0 0 64 64"><path d="m13 33 1-20 16 13M34 26l16-13 1 20M13 33q19-16 38 0M25 39c-9 13 10 21 18 13 6-6 2-14-4-13-5 1-5 6-1 7"/></symbol>
-  <symbol id="mask" viewBox="0 0 64 64"><path d="m16 23 16-5 16 5v17L32 50 16 40zM16 26c-12-7-12 17 0 10M48 26c12-7 12 17 0 10M23 29h18M23 35h18M27 41h10"/></symbol>
-  <symbol id="glove" viewBox="0 0 64 64"><path d="M23 47 13 35c-3-4 1-8 4-5l6 5V15a3 3 0 0 1 6 0v16-20a3 3 0 0 1 6 0v20-16a3 3 0 0 1 6 0v16-11a3 3 0 0 1 6 0v19l-6 8v7H23zM23 47h18"/></symbol>
-  <symbol id="mouth" viewBox="0 0 64 64"><path d="M10 33c8-1 13-11 19-5l3 3 3-3c6-6 11 4 19 5-6 11-13 17-22 17S16 44 10 33zM10 33q22 6 44 0"/></symbol>
-  <symbol id="headwear" viewBox="0 0 64 64"><path d="M15 37V28a17 17 0 0 1 34 0v9M21 28a11 11 0 0 1 22 0"/><rect x="12" y="32" width="10" height="19" rx="4"/><rect x="42" y="32" width="10" height="19" rx="4"/></symbol>
-  <symbol id="face" viewBox="0 0 64 64"><path d="M17 25v12c0 11 8 19 15 19s15-8 15-19V25M17 25a15 15 0 0 1 30 0M25 30v2M39 30v2M28 46h8"/><path d="m30 35 3 4-3 3"/><rect x="39" y="35" width="12" height="6" rx="2" transform="rotate(-30 45 38)"/></symbol>
-  <symbol id="accessory" viewBox="0 0 64 64"><path d="m32 10 20 22-20 22-20-22zM12 32h40M22 21l10 33 10-33"/></symbol>
+  <!-- Shared 64-unit pictograms: one hairline ink, soft curves, no gendered figures. -->
+  <symbol id="harness" viewBox="0 0 64 64"><path d="M19 9c0 11 5 17 13 23 8 6 13 12 13 23M45 9c0 11-5 17-13 23-8 6-13 12-13 23"/><circle cx="32" cy="32" r="4.5"/><path d="M15 9h8M41 9h8M15 55h8M41 55h8"/></symbol>
+  <symbol id="necklace" viewBox="0 0 64 64"><path d="M13 10c0 22 8 35 19 35s19-13 19-35"/><path d="M32 45v3"/><path d="m32 48 6 6-6 7-6-7z"/></symbol>
+  <symbol id="glasses" viewBox="0 0 64 64"><circle cx="20" cy="35" r="10"/><circle cx="44" cy="35" r="10"/><path d="M30 33q2-3 4 0M10 33 6 26M54 33l4-7"/></symbol>
+  <symbol id="earring" viewBox="0 0 64 64"><circle cx="32" cy="9" r="2.5"/><path d="M32 11.5v11"/><path d="M32 23c-6 7-10 11-10 17a10 10 0 0 0 20 0c0-6-4-10-10-17z"/><path d="M27 38a5 5 0 0 0 3 5"/></symbol>
+  <symbol id="shoe" viewBox="0 0 64 64"><path d="M9 47V21c5 0 8 2 10 5 3 5 8 8 15 10 8 2 21 3 21 11z"/><path d="M9 42h46M22 29l5 3M28 33l5 3"/></symbol>
+  <symbol id="bag" viewBox="0 0 64 64"><path d="M14 24h36l3 30H11z"/><path d="M23 24v-3a9 9 0 0 1 18 0v3"/><path d="M12.5 38h39"/></symbol>
+  <symbol id="bracelet" viewBox="0 0 64 64"><ellipse cx="32" cy="32" rx="22" ry="13"/><ellipse cx="32" cy="32" rx="16.5" ry="8.5"/><path d="M32 45v4"/><circle cx="32" cy="53" r="3.5"/></symbol>
+  <symbol id="ring" viewBox="0 0 64 64"><circle cx="32" cy="43" r="12"/><path d="M25 14h14l5 7-12 10-12-10zM20 21h24M29 14l-3 7 6 10 6-10-3-7"/></symbol>
+  <symbol id="nail" viewBox="0 0 64 64"><rect x="26" y="7" width="12" height="16" rx="2"/><path d="M29 23v5M35 23v5"/><path d="M20 37a9 9 0 0 1 9-9h6a9 9 0 0 1 9 9v11a8 8 0 0 1-8 8H28a8 8 0 0 1-8-8z"/><path d="M26 38v9"/></symbol>
+  <symbol id="hat" viewBox="0 0 64 64"><path d="M19 35c0-11 4-19 13-19s13 8 13 19"/><path d="M7 39c0-4 11-7 25-7s25 3 25 7-11 9-25 9S7 43 7 39z"/><path d="M19 36c4 1.5 8 2 13 2s9-.5 13-2"/></symbol>
+  <symbol id="ears-tail" viewBox="0 0 64 64"><path d="M12 44V14l15 11c3-.7 7-.7 10 0l15-11v30c0 8-10 14-20 14S12 52 12 44z"/><path d="M18 25l5 4M46 25l-5 4M29 43l3 3 3-3"/></symbol>
+  <symbol id="mask" viewBox="0 0 64 64"><path d="M15 22c11-5 23-5 34 0v10c0 12-7 20-17 20S15 44 15 32z"/><path d="M20 31h24M21 38h22"/><path d="M15 25c-8-1-9 9 0 11M49 25c8-1 9 9 0 11"/></symbol>
+  <symbol id="glove" viewBox="0 0 64 64"><path d="M22 54V41l-6-8c-2-3 1-6 4-4l4 4V17a3 3 0 0 1 6 0V12a3 3 0 0 1 6 0v6a3 3 0 0 1 6 0v3a3 3 0 0 1 6 0v21c0 6-4 12-10 12z"/><path d="M22 47h24"/></symbol>
+  <symbol id="mouth" viewBox="0 0 64 64"><path d="M9 33c6-1 11-9 17-9 3 0 4 2 6 2s3-2 6-2c6 0 11 8 17 9-5 11-13 17-23 17S14 44 9 33z"/><path d="M9 33c8 4 38 4 46 0"/></symbol>
+  <symbol id="headwear" viewBox="0 0 64 64"><path d="M30 31C25 22 17 18 10 20v22c7 2 15-3 20-11zM34 31c5-9 13-13 20-11v22c-7 2-15-3-20-11z"/><circle cx="32" cy="31" r="4"/><path d="M29.5 35 24 53M34.5 35 40 53"/></symbol>
+  <symbol id="face" viewBox="0 0 64 64"><path d="M32 7c-10 0-17 9-17 21 0 15 7 25 17 25s17-10 17-25C49 16 42 7 32 7z"/><path d="M23 28q2.5-2.5 5 0M36 28q2.5-2.5 5 0M28 41q4 3 8 0"/><path d="m43 33 1.4 3 3.2.4-2.4 2.2.6 3.2-2.8-1.600-2.8 1.600.6-3.200-2.400-2.200 3.200-.4z"/></symbol>
+  <symbol id="accessory" viewBox="0 0 64 64"><path d="M28 8c2 15 6 19 20 21-14 2-18 6-20 21-2-15-6-19-20-21 14-2 18-6 20-21z"/><path d="M49 42c.6 4 1.600 5 5 5.500-3.400.5-4.400 1.500-5 5.500-.6-4-1.600-5-5-5.500 3.400-.5 4.400-1.500 5-5.500z"/></symbol>
 </svg>

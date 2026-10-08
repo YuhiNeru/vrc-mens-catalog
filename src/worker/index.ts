@@ -5,9 +5,10 @@ import { checkReferences, importStatements, loadD1, overrideStatement, validateO
 import { PoliteFetcher, robotsAllows } from '../shared/fetcher';
 import { discover, parseProduct } from '../shared/parser';
 
-interface Env { DB:D1Database; ASSETS:Fetcher; ADMIN_TOKEN?:string; CRAWLER_MODE?:string }
+interface Env { DB:D1Database; ASSETS:Fetcher; ADMIN_TOKEN?:string; CRAWLER_MODE?:string; CATALOG_CACHE_MS?:string }
 const security={'X-Content-Type-Options':'nosniff','Referrer-Policy':'no-referrer','Content-Security-Policy':"default-src 'self'; img-src 'self' https://*.pximg.net; style-src 'self'; script-src 'self'; connect-src 'self'; frame-ancestors 'none'; base-uri 'self'; form-action 'self'"};
 const json=(data:unknown,status=200)=>Response.json(data,{status,headers:{...security,'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store'}});
+const cached=(data:unknown)=>Response.json(data,{headers:{...security,'Content-Type':'application/json; charset=utf-8','Cache-Control':'public, max-age=30, stale-while-revalidate=120'}});
 async function authorized(req:Request,env:Env) {
   if(!env.ADMIN_TOKEN || env.ADMIN_TOKEN.length<32)return false;
   const supplied=req.headers.get('Authorization')??'';
@@ -23,6 +24,28 @@ async function body(req:Request) {
   const joined=new Uint8Array(size);let offset=0;for(const x of chunks){joined.set(x,offset);offset+=x.length;}
   return JSON.parse(new TextDecoder().decode(joined));
 }
+// 公開カタログの変換は重いので、同一isolate内で短時間再利用する（管理APIの書き込みで破棄）。
+const CACHE_MS=30_000;
+type Derived=ReturnType<typeof derive>;
+const catalogCache=new WeakMap<object,{at:number,value:Promise<Derived>}>();
+function derive(data:ReturnType<typeof publicCatalog>){
+ const productById=new Map(data.products.map(p=>[p.id,p]));
+ const byTarget=new Map<string,Set<string>>();
+ for(const r of data.compatibility){const k=r.targetType+':'+r.targetId;let s=byTarget.get(k);if(!s)byTarget.set(k,s=new Set());s.add(r.productId);}
+ const productIds=(a:typeof data.avatars[number])=>{const ids=new Set(byTarget.get('avatar:'+a.id));if(a.bodyId&&a.bodyEvidence)for(const id of byTarget.get('body:'+a.bodyId)??[])ids.add(id);return ids;};
+ const avatarList=data.avatars.map(a=>{
+  const ids=productIds(a);let clothingCount=0,unisexClothingCount=0,menAccessoryCount=0,accessoryCount=0;
+  for(const id of ids){const p=productById.get(id);if(!p)continue;if(p.kind==='clothing'){clothingCount++;if(p.audience==='unisex')unisexClothingCount++;}else if(p.kind==='accessory'){accessoryCount++;if(p.audience!=='unisex')menAccessoryCount++;}}
+  return {...a,product:productById.get(a.productId),clothingCount,menClothingCount:clothingCount-unisexClothingCount,unisexClothingCount,menAccessoryCount,accessoryCount};
+ }).sort((a,b)=>b.menClothingCount-a.menClothingCount||a.name.localeCompare(b.name,'ja')||a.id.localeCompare(b.id));
+ const avatarMap=new Map(avatarList.map(a=>[a.id,a]));
+ return {data,productById,avatarList,avatarMap,productIds};
+}
+function loadCatalog(env:Env):Promise<Derived>{
+ const hit=catalogCache.get(env.DB);if(hit&&Date.now()-hit.at<Number(env.CATALOG_CACHE_MS??CACHE_MS))return hit.value;
+ const value=loadD1(env.DB).then(c=>derive(publicCatalog(c)));
+ catalogCache.set(env.DB,{at:Date.now(),value});value.catch(()=>catalogCache.delete(env.DB));return value;
+}
 export async function handle(req:Request,env:Env):Promise<Response> {
  const url=new URL(req.url),path=url.pathname;
  if(!path.startsWith('/api/')) {
@@ -35,12 +58,12 @@ export async function handle(req:Request,env:Env):Promise<Response> {
    if(path==='/api/admin/review' && req.method==='GET')return json(await loadD1(env.DB));
    if(path==='/api/admin/import' && req.method==='POST') {
      let data;try {data=importSchema.parse(await body(req));checkReferences(data,await loadD1(env.DB));}catch{return json({error:'invalid import'},400);}
-     const statements=importStatements(data);if(statements.length)await env.DB.batch(statements.map(s=>env.DB.prepare(s.sql).bind(...s.params)));
+     const statements=importStatements(data);if(statements.length)await env.DB.batch(statements.map(s=>env.DB.prepare(s.sql).bind(...s.params)));catalogCache.delete(env.DB);
      return json({imported:data.products.length});
    }
    if(path==='/api/admin/override' && req.method==='POST') {
      let o;try{o=overrideSchema.parse(await body(req));validateOverride(o,await loadD1(env.DB));}catch{return json({error:'invalid override'},400);}
-     const s=overrideStatement(o);await env.DB.prepare(s.sql).bind(...s.params).run();return json({saved:true});
+     const s=overrideStatement(o);await env.DB.prepare(s.sql).bind(...s.params).run();catalogCache.delete(env.DB);return json({saved:true});
    }
    // 公開HTTPのprobeも認証必須。取得先を固定しSSRFと大量取得を避ける。
    if(path==='/api/admin/probe' && req.method==='POST') {
@@ -58,24 +81,16 @@ export async function handle(req:Request,env:Env):Promise<Response> {
  if(!['GET','HEAD'].includes(req.method))return json({error:'method not allowed'},405);
  if(path==='/api/health')return json({ok:true,crawlerMode:env.CRAWLER_MODE??'local'});
  if(!['/api/avatars','/api/products'].includes(path) && !/^\/api\/avatars\/[a-zA-Z0-9_+-]+$/.test(path))return json({error:'not found'},404);
- const data=publicCatalog(await loadD1(env.DB));
+ const {data,avatarList,avatarMap}=await loadCatalog(env);
  const keyword=(url.searchParams.get('q')??'').normalize('NFKC').toLowerCase().slice(0,100);
  const matches=(...s:string[])=>s.join(' ').normalize('NFKC').toLowerCase().includes(keyword);
- const withProduct=(a:typeof data.avatars[number])=>{
-   const ids=new Set(data.compatibility.filter(r=>r.targetType==='avatar'?r.targetId===a.id:a.bodyId===r.targetId && Boolean(a.bodyEvidence)).map(r=>r.productId));
-   const clothing=data.products.filter(p=>p.kind==='clothing'&&ids.has(p.id));
-   const unisexClothingCount=clothing.filter(p=>p.audience==='unisex').length;
-   const menAccessoryCount=data.products.filter(p=>p.kind==='accessory'&&p.audience!=='unisex'&&ids.has(p.id)).length;
-   const accessoryCount=data.products.filter(p=>p.kind==='accessory'&&ids.has(p.id)).length;
-   return {...a,product:data.products.find(p=>p.id===a.productId),clothingCount:clothing.length,menClothingCount:clothing.length-unisexClothingCount,unisexClothingCount,menAccessoryCount,accessoryCount};
- };
- if(path==='/api/avatars')return json({items:data.avatars.filter(a=>matches(a.name,...a.aliases,a.author)).map(withProduct).sort((a,b)=>b.menClothingCount-a.menClothingCount||a.name.localeCompare(b.name,'ja')||a.id.localeCompare(b.id))});
+ if(path==='/api/avatars')return cached({items:keyword?avatarList.filter(a=>matches(a.name,...a.aliases,a.author)):avatarList});
  const detail=path.match(/^\/api\/avatars\/(.+)$/);
  if(detail) {
-   const a=data.avatars.find(a=>a.id===detail[1]);if(!a)return json({error:'not found'},404);
+   const a=avatarMap.get(detail[1]);if(!a)return json({error:'not found'},404);
    const rs=data.compatibility.filter(r=>r.targetType==='avatar'?r.targetId===a.id:r.targetId===a.bodyId && Boolean(a.bodyEvidence));
    const related=(kind:'clothing'|'accessory')=>data.products.filter(p=>p.kind===kind&&rs.some(r=>r.productId===p.id)).sort(byLikes).map(p=>({...p,compatibility:rs.filter(r=>r.productId===p.id)}));
-   return json({...withProduct(a),clothing:related('clothing'),accessories:related('accessory')});
+   return cached({...a,clothing:related('clothing'),accessories:related('accessory')});
  }
  const kind=url.searchParams.get('kind')??'clothing';
  if(!['clothing','accessory'].includes(kind))return json({error:'invalid kind'},400);
@@ -108,6 +123,6 @@ export async function handle(req:Request,env:Env):Promise<Response> {
    const cover=products.find(p=>p.imageUrl);
    return {category,count:products.length,imageUrl:cover?.imageUrl??null,productName:cover?.name??null};
  }):[];
- return json({items:items.slice((page-1)*24,page*24).map(p=>({...p,compatibility:data.compatibility.filter(r=>r.productId===p.id)})),total:items.length,page,categories,categoryPreviews,styles,avatars:data.avatars});
+ return cached({items:items.slice((page-1)*24,page*24).map(p=>({...p,compatibility:data.compatibility.filter(r=>r.productId===p.id)})),total:items.length,page,categories,categoryPreviews,styles,avatars:data.avatars});
 }
 export default {async fetch(req:Request,env:Env) {try{return await handle(req,env);}catch {return json({error:'service unavailable'},503);}}};

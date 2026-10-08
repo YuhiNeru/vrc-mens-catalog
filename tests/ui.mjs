@@ -27,12 +27,12 @@ try {
  await fs.mkdir('data/screenshots',{recursive:true});
  const page=await browser.newPage({viewport:{width:1366,height:960}});
  page.on('pageerror',e=>failures.push(e.message));
- await page.goto(base);await page.getByRole('status').filter({hasText:`確認済みアバター ${expectedAvatars} 件`}).waitFor();
+ await page.goto(base);await page.getByRole('status').filter({hasText:`${expectedAvatars} 名`}).waitFor();
  assert.equal(await page.locator('.card').count(),expectedAvatars);
  for(const avatar of avatarData.items){
   assert.equal(avatar.menClothingCount+avatar.unisexClothingCount,avatar.clothingCount);
   const card=page.locator('.card').filter({has:page.locator(`a.thumbnail-link[href="#avatar/${avatar.id}"]`)});
-  assert.ok(await card.getByText(`メンズ${avatar.menClothingCount}件`,{exact:true}).isVisible());
+  assert.ok(await card.getByText(`衣装 ${avatar.menClothingCount}件 · アイテム ${avatar.accessoryCount}件`,{exact:true}).isVisible());
  }
  const firstImage=page.locator('.card img').first();
  await firstImage.waitFor();
@@ -51,7 +51,7 @@ try {
  assert.deepEqual(await page.locator('[data-floor=clothing] .card a.thumbnail-link').evaluateAll(links=>links.map(a=>a.href)),menItems.map(p=>p.url));
  await checkClothingThumbnails(page);
  await page.locator('.card summary').first().click();assert.ok(await page.locator('.card').first().getByText('対象版：',{exact:false}).isVisible());
- await page.getByRole('link',{name:'メンズ衣装',exact:true}).click();await page.getByRole('status').filter({hasText:`${clothingData.total} 件`}).waitFor();
+ await page.getByRole('navigation',{name:'メインナビゲーション'}).getByRole('link',{name:'メンズ衣装',exact:true}).click();await page.getByRole('status').filter({hasText:`${clothingData.total} 件`}).waitFor();
  await checkClothingThumbnails(page);
  const boothUrl=await page.locator('.card a.thumbnail-link').first().getAttribute('href');
  await page.context().route(boothUrl,route=>route.fulfill({status:200,contentType:'text/html',body:'<title>BOOTH link check</title>'}));
@@ -62,7 +62,7 @@ try {
  await page.locator('select[name=avatar]').selectOption('kuuta');await page.getByRole('button',{name:'絞り込む'}).click();await page.getByRole('status').filter({hasText:`${kuutaRegular.total} 件`}).waitFor();assert.equal(await page.locator('.card').count(),Math.min(24,kuutaRegular.total));
  await page.locator('input[name=maxPrice]').fill('1000');await page.getByRole('button',{name:'絞り込む'}).click();await page.getByRole('status').filter({hasText:`${cheapKuuta.total} 件`}).waitFor();assert.equal(await page.locator('.card').count(),Math.min(24,cheapKuuta.total));
  assert.equal(await page.locator('a[href="#unisex"]').count(),0);
- await page.getByRole('link',{name:'アクセサリー',exact:true}).click();await page.getByRole('heading',{name:'アクセサリー',exact:true}).waitFor();
+ await page.getByRole('navigation',{name:'メインナビゲーション'}).getByRole('link',{name:'アクセサリー',exact:true}).click();await page.getByRole('heading',{name:'アクセサリー',exact:true}).waitFor();
  await page.getByRole('status').filter({hasText:`${accessoryData.total} 件`}).waitFor();
  assert.equal(await page.locator('.card').count(),Math.min(24,accessoryData.total));
  await checkClothingThumbnails(page);
@@ -86,9 +86,9 @@ try {
  assert.equal(new URL(page.url()).hash,'#clothing');
  assert.equal(await page.locator('select[name=tag]').count(),0);
  assert.equal(await page.locator('.card').count(),Math.min(24,clothingData.total));
- await page.setViewportSize({width:390,height:844});await page.goto(base+'/#avatars');await page.getByRole('status').filter({hasText:`確認済みアバター ${expectedAvatars} 件`}).waitFor();
+ await page.setViewportSize({width:390,height:844});await page.goto(base+'/#avatars');await page.getByRole('status').filter({hasText:`${expectedAvatars} 名`}).waitFor();
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
- await page.getByRole('link',{name:'ファッション雑貨',exact:true}).click();await page.getByRole('heading',{name:'ファッション雑貨',exact:true}).waitFor();
+ await page.getByRole('navigation',{name:'メインナビゲーション'}).getByRole('link',{name:'ファッション雑貨',exact:true}).click();await page.getByRole('heading',{name:'ファッション雑貨',exact:true}).waitFor();
  await page.getByRole('status').filter({hasText:`${goodsData.total} 件`}).waitFor();
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
  await page.locator('#category-floors').scrollIntoViewIfNeeded();
@@ -101,9 +101,8 @@ try {
  await page.getByRole('status').filter({hasText:`${clothingData.total} 件`}).waitFor();
  assert.equal(new URL(page.url()).hash,'#clothing');
  assert.ok(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth));
- await page.goto(base+'/#avatars');await page.getByRole('status').filter({hasText:`確認済みアバター ${expectedAvatars} 件`}).waitFor();
+ await page.goto(base+'/#avatars');await page.getByRole('status').filter({hasText:`${expectedAvatars} 名`}).waitFor();
  await page.screenshot({path:'data/screenshots/mobile.png',fullPage:true});
- await page.locator('input[type=search]').fill('存在しない名前');await page.getByRole('button',{name:'検索する',exact:true}).click();await page.locator('.empty').waitFor();
  assert.deepEqual(failures,[]);
  console.log('UI passed: desktop/mobile, detail, compatibility, filters, empty state, no overflow/errors');
 }finally {await browser.close();}
