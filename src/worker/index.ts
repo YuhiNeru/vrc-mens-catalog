@@ -1,5 +1,6 @@
 import { Catalog, importSchema, overrideSchema, publicCatalog } from '../shared/model';
 import {byLikes} from '../shared/likes';
+import {accessoryFloors,isAccessoryFloor} from '../shared/floors';
 import { checkReferences, importStatements, loadD1, overrideStatement, validateOverride } from '../shared/storage';
 import { PoliteFetcher, robotsAllows } from '../shared/fetcher';
 import { discover, parseProduct } from '../shared/parser';
@@ -79,6 +80,10 @@ export async function handle(req:Request,env:Env):Promise<Response> {
  const kind=url.searchParams.get('kind')??'clothing';
  if(!['clothing','accessory'].includes(kind))return json({error:'invalid kind'},400);
  let items=data.products.filter(p=>p.kind===kind&&matches(p.name,p.shop,...p.tags,...p.catalogTags));
+ const floor=url.searchParams.get('floor');
+ if(floor&&!isAccessoryFloor(floor))return json({error:'invalid floor'},400);
+ const inFloor=(p:{category:string})=>!floor||!isAccessoryFloor(floor)||(accessoryFloors[floor] as readonly string[]).includes(p.category)||(floor==='goods'&&!Object.values(accessoryFloors).some(c=>(c as readonly string[]).includes(p.category)));
+ if(floor)items=items.filter(inFloor);
  const tag=url.searchParams.get('tag');
  if(tag)items=items.filter(p=>p.catalogTags.includes(tag));
  const audience=url.searchParams.get('audience')??(kind==='accessory'?'all':'men');
@@ -96,9 +101,10 @@ export async function handle(req:Request,env:Env):Promise<Response> {
  }
  const sort=url.searchParams.get('sort');items.sort(sort==='likes'?byLikes:(a,b)=> sort==='priceAsc'?(a.priceMin??Infinity)-(b.priceMin??Infinity):sort==='priceDesc'?(b.priceMin??-1)-(a.priceMin??-1):(b.publishedAt??b.fetchedAt).localeCompare(a.publishedAt??a.fetchedAt));
  const page=Number(url.searchParams.get('page')??1);if(!Number.isInteger(page)||page<1)return json({error:'invalid page'},400);
- const categories=[...new Set(data.products.filter(p=>p.kind===kind).map(p=>p.category))],styles=[...new Set(data.products.filter(p=>p.kind===kind).map(p=>p.style))];
+ const scoped=data.products.filter(p=>p.kind===kind&&inFloor(p));
+ const categories=[...new Set(scoped.map(p=>p.category))],styles=[...new Set(scoped.map(p=>p.style))];
  const categoryPreviews=kind==='accessory'?categories.map(category=>{
-   const products=data.products.filter(p=>p.kind===kind&&p.category===category).sort(byLikes);
+   const products=scoped.filter(p=>p.category===category).sort(byLikes);
    const cover=products.find(p=>p.imageUrl);
    return {category,count:products.length,imageUrl:cover?.imageUrl??null,productName:cover?.name??null};
  }):[];
