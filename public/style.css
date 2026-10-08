@@ -136,3 +136,97 @@ footer p{color:#9fada3;margin:0;font-size:11px}footer .footer-booth{margin-left:
 #filters[data-route=avatars]~#content .card h3{margin:4px 0 0;line-height:1.5;display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #filters[data-route=avatars]~#content .grid{gap:22px 18px}
 @media(min-width:1500px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(6,minmax(0,1fr))}}
+
+/* Avatar floor as a cast roster: portrait panels with name plate, key figures and a single call to action. */
+#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:40px 26px}
+@media(min-width:1500px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(5,minmax(0,1fr))}}
+@media(max-width:1180px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:900px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:30px 14px}}
+.cast{display:flex;flex-direction:column;background:#fff;border:1px solid var(--line);transition:border-color .25s,box-shadow .25s,transform .25s}
+.cast:hover{border-color:var(--green);box-shadow:0 14px 28px -18px rgba(31,42,37,.45);transform:translateY(-2px)}
+.cast-photo{position:relative;overflow:hidden}
+#filters[data-route=avatars]~#content .cast .visual{aspect-ratio:3/4;background:#eef0e9}
+.cast .visual img{object-fit:cover;object-position:center top}
+.cast-photo::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(24,34,29,.82),rgba(24,34,29,0) 46%),linear-gradient(to bottom,rgba(24,34,29,.5),rgba(24,34,29,0) 16%);pointer-events:none}
+.cast-no{position:absolute;top:12px;left:14px;z-index:1;font-family:Georgia,serif;font-size:13px;letter-spacing:.16em;color:#fff;text-shadow:0 1px 6px rgba(0,0,0,.45)}
+.cast-type{position:absolute;top:10px;right:10px;z-index:1;padding:4px 10px;font-size:10px;letter-spacing:.14em;background:rgba(255,255,255,.92);color:var(--green)}
+.cast-plate{position:absolute;left:14px;right:14px;bottom:13px;z-index:1;display:flex;flex-direction:column;gap:3px;color:#fff}
+.cast-name{font-size:19px;font-weight:600;letter-spacing:.08em;line-height:1.35;text-shadow:0 1px 8px rgba(0,0,0,.4);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cast-alias{font-family:Georgia,serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;opacity:.82;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cast-body{padding:12px 14px 14px;display:flex;flex-direction:column;gap:12px}
+.cast-author{margin:0;font-size:11px;letter-spacing:.08em;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cast-stats{display:grid;grid-template-columns:repeat(3,1fr);margin:0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.cast-stats>div{padding:9px 0 8px;text-align:center}
+.cast-stats>div+div{border-left:1px solid var(--line)}
+.cast-stats dt{font-size:9px;letter-spacing:.1em;color:var(--muted)}
+.cast-stats dd{margin:3px 0 0;font-family:Georgia,serif;font-size:17px;color:var(--ink)}
+.cast-foot{display:flex;justify-content:space-between;align-items:center;gap:8px}
+.cast-foot .price{font-size:13px;white-space:nowrap}
+.cast-more{text-decoration:none;font-family:Georgia,serif;font-size:10px;letter-spacing:.16em;color:var(--green);border-bottom:1px solid var(--green);padding-bottom:2px;white-space:nowrap}
+.cast:hover .cast-more{color:var(--ink);border-color:var(--ink)}
+@media(max-width:560px){.cast-name{font-size:15px;letter-spacing:.04em}.cast-no{top:9px;left:10px;font-size:11px}.cast-type{top:8px;right:8px;font-size:9px;padding:3px 7px}.cast-plate{left:10px;right:10px;bottom:9px}.cast-body{padding:10px 10px 12px;gap:9px}.cast-stats dd{font-size:14px}.cast-stats dt{font-size:8px;letter-spacing:.04em}.cast-foot{flex-direction:column;align-items:flex-start;gap:6px}}
+@media(prefers-reduced-motion:reduce){.cast{transition:none}.cast:hover{transform:none}}
+
+/* Fewer, larger cast panels: three across on desktop, centred in a bounded roster. */
+#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 36px;max-width:1180px;margin:0 auto}
+@media(min-width:1500px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:1180px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:40px 24px;max-width:760px}}
+@media(max-width:560px){#filters[data-route=avatars]~#content .grid{gap:28px 12px}}
+.cast-name{font-size:22px;letter-spacing:.1em}
+.cast-alias{font-size:11px}
+.cast-plate{left:20px;right:20px;bottom:18px;gap:5px}
+.cast-plate::before{content:"";width:28px;height:1px;background:rgba(255,255,255,.75);margin-bottom:5px}
+.cast-no{top:16px;left:20px;font-size:14px}.cast-type{top:14px;right:14px}
+.cast-body{padding:16px 20px 20px;gap:14px}
+.cast-stats dt{font-size:10px}.cast-stats dd{font-size:20px}
+.cast-foot .price{font-size:15px}.cast-more{font-size:11px}
+@media(max-width:1180px){.cast-name{font-size:19px}}
+@media(max-width:560px){.cast-name{font-size:15px}.cast-plate{left:10px;right:10px;bottom:9px}.cast-plate::before{display:none}.cast-no{top:9px;left:10px;font-size:11px}.cast-type{top:8px;right:8px}.cast-body{padding:10px 10px 12px}.cast-stats dd{font-size:14px}.cast-stats dt{font-size:8px}.cast-more{font-size:10px}.cast-foot .price{font-size:12px}}
+
+/* Thumbnails already carry the avatar name: show them whole and as wide as the page allows. */
+.cast-plate{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;left:0;bottom:0}
+.cast-plate::before{display:none}
+.cast-photo::after{background:linear-gradient(to bottom,rgba(24,34,29,.45),rgba(24,34,29,0) 12%)}
+.catalog:has(#filters[data-route=avatars]){padding-left:1.5%;padding-right:1.5%}
+#filters[data-route=avatars]~#content .grid{max-width:none;gap:40px 22px}
+#filters[data-route=avatars]~#content .cast .visual{aspect-ratio:1}
+#filters[data-route=avatars]~#content .cast .visual img{object-fit:contain;object-position:center}
+@media(max-width:1180px){#filters[data-route=avatars]~#content .grid{max-width:none}}
+@media(max-width:560px){.catalog:has(#filters[data-route=avatars]){padding-left:3%;padding-right:3%}}
+
+/* Portrait panels again: the square thumbnail sits whole in the middle, its own colours bleed into the top and bottom. */
+#filters[data-route=avatars]~#content .cast .visual{aspect-ratio:3/4;background:transparent}
+.cast-photo{background:#1f2a25}
+.cast-photo::before{content:"";position:absolute;inset:-24px;background:var(--bg) center/cover;filter:blur(20px) saturate(1.1) brightness(.78)}
+.cast .visual{z-index:1}
+.cast .visual img{-webkit-mask-image:linear-gradient(to bottom,transparent 12.5%,#000 19%,#000 81%,transparent 87.5%);mask-image:linear-gradient(to bottom,transparent 12.5%,#000 19%,#000 81%,transparent 87.5%)}
+.cast-photo::after{z-index:2}.cast-no,.cast-type{z-index:3}
+
+/* Natural bleed: stretch the thumbnail's own top and bottom pixel rows outward, softened only slightly. */
+.cast-photo::before{display:none}
+.cast .visual::before,.cast .visual::after{content:"";position:absolute;left:-6px;right:-6px;height:calc(12.5% + 14px);background-image:var(--bg);background-repeat:no-repeat;background-size:calc(100% - 12px) 3000%;filter:blur(3px);z-index:0}
+.cast .visual::before{top:-8px;background-position:center top}
+.cast .visual::after{bottom:-8px;background-position:center bottom}
+.cast .visual img{position:relative;z-index:1;-webkit-mask-image:linear-gradient(to bottom,transparent 12.5%,#000 14.5%,#000 85.5%,transparent 87.5%);mask-image:linear-gradient(to bottom,transparent 12.5%,#000 14.5%,#000 85.5%,transparent 87.5%)}
+/* Flip each bleed so the thumbnail's edge row meets the image exactly, then let it trail outward. */
+.cast .visual::before,.cast .visual::after{transform:scaleY(-1);background-size:calc(100% - 12px) 1600%;filter:blur(4px) brightness(.92)}
+.cast .visual::before{background-position:center top}
+.cast .visual::after{background-position:center bottom}
+.cast .visual img{-webkit-mask-image:linear-gradient(to bottom,transparent 12.5%,#000 16%,#000 84%,transparent 87.5%);mask-image:linear-gradient(to bottom,transparent 12.5%,#000 16%,#000 84%,transparent 87.5%)}
+.cast .visual::before,.cast .visual::after{background-size:calc(100% - 12px) 7000%;filter:blur(5px) brightness(.9)}
+/* Two-layer bleed: edge rows continue the image at the seam and dissolve into a lightly softened backdrop of the same picture. */
+.cast-photo::before{display:block;content:"";position:absolute;inset:-12px;background:var(--bg) center/cover;filter:blur(8px) brightness(.9);z-index:0}
+.cast .visual::before,.cast .visual::after{background-size:calc(100% - 12px) 5000%;filter:blur(3px)}
+.cast .visual::before{-webkit-mask-image:linear-gradient(to bottom,#000 30%,transparent 100%);mask-image:linear-gradient(to bottom,#000 30%,transparent 100%)}
+.cast .visual::after{-webkit-mask-image:linear-gradient(to top,#000 30%,transparent 100%);mask-image:linear-gradient(to top,#000 30%,transparent 100%)}
+.cast .visual img{-webkit-mask-image:linear-gradient(to bottom,transparent 12.5%,#000 15.5%,#000 84.5%,transparent 87.5%);mask-image:linear-gradient(to bottom,transparent 12.5%,#000 15.5%,#000 84.5%,transparent 87.5%)}
+/* Final bleed: no stretched strips, just a lightly softened copy behind and a long cross-fade at the seams. */
+.cast .visual::before,.cast .visual::after{display:none}
+.cast-photo::before{inset:-10px;filter:blur(7px) brightness(.93)}
+.cast .visual img{-webkit-mask-image:linear-gradient(to bottom,transparent 12.5%,#000 23%,#000 77%,transparent 87.5%);mask-image:linear-gradient(to bottom,transparent 12.5%,#000 23%,#000 77%,transparent 87.5%)}
+/* Shape-free bleed: the backdrop is only the avatar's colours (no ghosted hands or logos), and the thumbnail's edge rows flow out of the seam. */
+.cast-photo::before{inset:-40px;background:var(--bg) center/100% 100%;filter:blur(36px) saturate(1.05) brightness(.9)}
+.cast .visual::before,.cast .visual::after{display:block;left:-10px;right:-10px;height:calc(25% + 10px);background-size:calc(100% - 20px) 2400%;filter:blur(10px);z-index:0}
+.cast .visual::before{top:-10px;-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent 100%);mask-image:linear-gradient(to bottom,#000 55%,transparent 100%)}
+.cast .visual::after{bottom:-10px;-webkit-mask-image:linear-gradient(to top,#000 55%,transparent 100%);mask-image:linear-gradient(to top,#000 55%,transparent 100%)}
+.cast .visual img{-webkit-mask-image:linear-gradient(to bottom,transparent 12.5%,#000 18%,#000 82%,transparent 87.5%);mask-image:linear-gradient(to bottom,transparent 12.5%,#000 18%,#000 82%,transparent 87.5%)}
