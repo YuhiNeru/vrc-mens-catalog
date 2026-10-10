@@ -20,6 +20,7 @@ const sources=():Source[]=>[
 ].map(({category,query})=>{const u=new URL('https://booth.pm/ja/browse/'+encodeURIComponent(category));if(query)u.searchParams.set('q',query);u.searchParams.set('sort','new');return {query:query||'3D装飾品全体',url:u.href,next:u.href,pages:0,totalReported:null,ids:[],visited:[],complete:false};});
 const sql=(ss:Statement[])=>ss.map(s=>{let i=0;return s.sql.replace(/\?/g,()=>{const v=s.params[i++];return v===null?'NULL':typeof v==='number'?String(v):"'"+v.replace(/'/g,"''")+"'";})+';';}).join('\n');
 const wrangler=fileURLToPath(new URL('../node_modules/wrangler/bin/wrangler.js',import.meta.url));
+const recycleAfter=Number(process.argv.find(a=>a.startsWith('--recycle-after='))?.split('=')[1]??0);
 
 await withLock(async()=>{
  let store=await readJson<Catalog>('data/catalog.json');
@@ -31,12 +32,24 @@ await withLock(async()=>{
  const protectedIds=new Set(classified.map(c=>c.id));
  const avatars=effective(store).avatars.filter(a=>a.review==='verified');
  const changed=new Set<string>(state.added);
+ const rawIds=new Set((await fs.readdir('data/raw')).filter(n=>/^\d+\.html$/.test(n)).map(n=>n.slice(0,-5)));
+ let processedThisSession=0;
  const save=async()=>{
   state.updatedAt=new Date().toISOString();
-  const remaining=state.queue.length-state.cursor;
-  state.estimatedFinish=state.sources.every(s=>s.complete)?new Date(Date.now()+remaining*4000).toISOString():null;
+  const remainingFetch=state.queue.slice(state.cursor).filter(id=>!rawIds.has(id)).length;
+  // Include the daily budget and cached pages; this is a planning estimate, not a deadline.
+  let finish=Date.now(),remaining=remainingFetch;
+  let used=(await readJson(`data/budget-${day()}.json`,{used:0})).used;
+  while(remaining>0){
+   const date=new Intl.DateTimeFormat('sv-SE',{timeZone:'Asia/Tokyo'}).format(new Date(finish));
+   const midnight=new Date(date+'T00:00:00+09:00').getTime()+86400000;
+   const count=Math.min(remaining,Math.max(0,12000-used),Math.max(0,Math.floor((midnight-finish)/4000)));
+   finish+=count*4000;remaining-=count;
+   if(remaining>0){finish=midnight+60000;used=0;}
+  }
+  state.estimatedFinish=state.sources.every(s=>s.complete)?new Date(finish).toISOString():null;
   await writeJson(file,state);
-  await writeJson('data/progress-full-accessories.json',{runId:state.id,phase:state.phase,updatedAt:state.updatedAt,sourcesComplete:state.sources.filter(s=>s.complete).length,sourcesTotal:state.sources.length,pages:state.sources.reduce((n,s)=>n+s.pages,0),discovered:new Set(state.sources.flatMap(s=>s.ids)).size,processed:state.cursor,total:state.queue.length,downloaded:state.downloaded,cached:state.cached,failed:state.failed.length,added:state.added.length,requests:state.requests,estimatedFinish:state.estimatedFinish,retryAt:state.retryAt?new Date(state.retryAt).toISOString():null,reason:state.reason});
+  await writeJson('data/progress-full-accessories.json',{runId:state.id,phase:state.phase,updatedAt:state.updatedAt,sourcesComplete:state.sources.filter(s=>s.complete).length,sourcesTotal:state.sources.length,pages:state.sources.reduce((n,s)=>n+s.pages,0),discovered:new Set(state.sources.flatMap(s=>s.ids)).size,processed:state.cursor,total:state.queue.length,downloaded:state.downloaded,cached:state.cached,failed:state.failed.length,added:state.added.length,requests:state.requests,remainingFetch,heapUsedMB:Math.round(process.memoryUsage().heapUsed/1048576),estimatedFinish:state.estimatedFinish,retryAt:state.retryAt?new Date(state.retryAt).toISOString():null,reason:state.reason});
  };
  const publish=async()=>{
   if(!changed.size)return;
@@ -87,7 +100,7 @@ await withLock(async()=>{
     try{
      let html:string,fetchedAt:string;
      try{html=await fs.readFile(raw,'utf8');fetchedAt=existing?.fetchedAt??(await fs.stat(raw)).mtime.toISOString();state.cached++;}
-     catch(e:any){if(e.code!=='ENOENT')throw e;html=await get(url);fetchedAt=new Date().toISOString();await fs.writeFile(raw,html);state.downloaded++;}
+     catch(e:any){if(e.code!=='ENOENT')throw e;html=await get(url);fetchedAt=new Date().toISOString();await fs.writeFile(raw,html);rawIds.add(id);state.downloaded++;}
      const parsed=existing?{product:existing,compatibility:store.compatibility.filter(r=>r.productId===id)}:parseProduct(html,url,avatars,fetchedAt);
      if(!existing){const data=importSchema.parse({products:[parsed.product],compatibility:parsed.compatibility.filter(r=>r.targetType==='body'||avatars.some(a=>a.id===r.targetId))});mergeImport(store,data);}
      if(!protectedIds.has(id)){
@@ -99,8 +112,15 @@ await withLock(async()=>{
       }
      }
     }catch(e){if(e instanceof StopCrawl)throw e;state.failed.push({id,reason:e instanceof Error?e.message.slice(0,200):'unknown'});}
-    state.cursor++;batch++;
-    if(batch>=50){await publish();await writeJson('data/catalog.json',store);await save();console.log(`products ${state.cursor}/${state.queue.length}, added ${state.added.length}, failed ${state.failed.length}`);batch=0;}
+    state.cursor++;batch++;processedThisSession++;
+    if(batch>=50){
+     await publish();await writeJson('data/catalog.json',store);
+     // Re-read durable JSON to release any large HTML strings retained by extracted substrings.
+     store=await readJson<Catalog>('data/catalog.json');global.gc?.();
+     await save();console.log(`products ${state.cursor}/${state.queue.length}, added ${state.added.length}, failed ${state.failed.length}`);batch=0;
+     // The supervisor starts a fresh worker from this checkpoint before long-lived heap growth.
+     if(recycleAfter>0&&processedThisSession>=recycleAfter){process.exitCode=75;return;}
+    }
    }
    await publish();await writeJson('data/catalog.json',store);
    state.phase='likes';await save();
