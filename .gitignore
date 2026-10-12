@@ -14,3 +14,5 @@ data/
 *.pfx
 *.log
 test-results/
+__pycache__/
+*.pyc

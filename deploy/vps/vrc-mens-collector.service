@@ -1,0 +1,42 @@
+[Unit]
+Description=VRC MEN'S SELECT public BOOTH collector
+After=network-online.target
+Wants=network-online.target
+StartLimitIntervalSec=600
+StartLimitBurst=3
+
+[Service]
+Type=simple
+User=vrcmens
+Group=vrcmens
+WorkingDirectory=/var/lib/vrc-mens-collector
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /opt/vrc-mens-collector/worker.py
+Restart=on-failure
+RestartPreventExitStatus=20
+RestartSec=30
+TimeoutStopSec=35
+KillMode=mixed
+UMask=0077
+StateDirectory=vrc-mens-collector
+MemoryAccounting=yes
+MemoryHigh=256M
+MemoryMax=384M
+MemorySwapMax=128M
+CPUAccounting=yes
+CPUQuota=50%
+TasksMax=32
+Nice=10
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/vrc-mens-collector
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+
+[Install]
+WantedBy=multi-user.target

@@ -1,0 +1,14 @@
+[Unit]
+Description=Back up VRC MEN'S SELECT collector SQLite database
+[Service]
+Type=oneshot
+User=vrcmens
+Group=vrcmens
+ExecStart=/usr/bin/python3 /opt/vrc-mens-collector/manage.py backup
+UMask=0077
+NoNewPrivileges=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/vrc-mens-collector
+MemoryMax=96M
+CPUQuota=25%

@@ -21,6 +21,7 @@ const sources=():Source[]=>[
 const sql=(ss:Statement[])=>ss.map(s=>{let i=0;return s.sql.replace(/\?/g,()=>{const v=s.params[i++];return v===null?'NULL':typeof v==='number'?String(v):"'"+v.replace(/'/g,"''")+"'";})+';';}).join('\n');
 const wrangler=fileURLToPath(new URL('../node_modules/wrangler/bin/wrangler.js',import.meta.url));
 const recycleAfter=Number(process.argv.find(a=>a.startsWith('--recycle-after='))?.split('=')[1]??0);
+if(await fs.access('data/vps-migration-active.json').then(()=>true,()=>false))throw new Error('Collection moved to VPS; stop VPS and use the rollback procedure before running locally');
 
 await withLock(async()=>{
  let store=await readJson<Catalog>('data/catalog.json');
