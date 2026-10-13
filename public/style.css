@@ -230,3 +230,115 @@ footer p{color:#9fada3;margin:0;font-size:11px}footer .footer-booth{margin-left:
 .cast .visual::before{top:-10px;-webkit-mask-image:linear-gradient(to bottom,#000 55%,transparent 100%);mask-image:linear-gradient(to bottom,#000 55%,transparent 100%)}
 .cast .visual::after{bottom:-10px;-webkit-mask-image:linear-gradient(to top,#000 55%,transparent 100%);mask-image:linear-gradient(to top,#000 55%,transparent 100%)}
 .cast .visual img{-webkit-mask-image:linear-gradient(to bottom,transparent 12.5%,#000 18%,#000 82%,transparent 87.5%);mask-image:linear-gradient(to bottom,transparent 12.5%,#000 18%,#000 82%,transparent 87.5%)}
+
+/* Black cast panels: layered near-blacks (not flat #000), a faint top light, silver type and hairline rules. */
+.cast{--cast-ink:#0c0d0d;--cast-band:#141615;--cast-rule:rgba(255,255,255,.09);--cast-text:#e9eae6;--cast-sub:#8e938f;--cast-silver:#c8ccc6;background:var(--cast-ink);border:1px solid #0c0d0d;box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
+.cast:hover{border-color:#3a3e3c;box-shadow:inset 0 0 0 1px rgba(255,255,255,.06),0 18px 34px -20px rgba(0,0,0,.7)}
+.cast-photo::before,.cast .visual::before,.cast .visual::after{display:none}
+.cast-photo{background:radial-gradient(120% 38% at 50% 0%,#202322 0%,rgba(32,35,34,0) 70%),radial-gradient(120% 30% at 50% 100%,#1a1c1b 0%,rgba(26,28,27,0) 70%),linear-gradient(to bottom,#151716 0%,var(--cast-ink) 14%,var(--cast-ink) 86%,#0f1110 100%)}
+.cast-photo::after{background:linear-gradient(to bottom,rgba(12,13,13,.35),rgba(12,13,13,0) 12%,rgba(12,13,13,0) 84%,rgba(12,13,13,.55))}
+.cast .visual img{-webkit-mask-image:linear-gradient(to bottom,transparent 12.5%,#000 17%,#000 83%,transparent 87.5%);mask-image:linear-gradient(to bottom,transparent 12.5%,#000 17%,#000 83%,transparent 87.5%)}
+.cast-no{color:var(--cast-silver);text-shadow:none;letter-spacing:.24em}
+.cast-type{background:transparent;color:var(--cast-silver);border:1px solid rgba(200,204,198,.45);letter-spacing:.2em}
+.cast-body{border-top:1px solid var(--cast-rule)}
+.cast-author{color:var(--cast-sub);letter-spacing:.14em}
+.cast-stats{border-color:var(--cast-rule)}.cast-stats>div+div{border-left-color:var(--cast-rule)}
+.cast-stats dt{color:var(--cast-sub)}.cast-stats dd{color:var(--cast-text)}
+.cast-foot .price{color:var(--cast-text)}
+.cast-more{color:var(--cast-silver);border-bottom-color:rgba(200,204,198,.5)}
+.cast:hover .cast-more{color:#fff;border-color:#fff}
+.cast a:focus-visible{outline-color:var(--cast-silver)}
+
+/* Forest-black, tuned to the site's green: layered tones instead of a flat fill. Three across down to portrait Full HD. */
+#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(3,minmax(0,1fr));max-width:none;gap:44px 22px}
+@media(max-width:760px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:28px 12px}}
+@media(max-width:1180px) and (min-width:761px){#filters[data-route=avatars]~#content .grid{gap:32px 16px}.cast-name{font-size:17px}.cast-body{padding:14px 14px 16px}.cast-stats dd{font-size:17px}.cast-stats dt{font-size:9px;letter-spacing:.04em}}
+.cast{--cast-ink:#17201c;--cast-deep:#111814;--cast-rule:rgba(220,232,169,.12);--cast-text:#eef2ea;--cast-sub:#93a397;--cast-silver:#cfd8cb;--cast-accent:#dce8a9;background:linear-gradient(to bottom,var(--cast-ink),#1b2520);border-color:#16201b;box-shadow:inset 0 0 0 1px rgba(220,232,169,.06)}
+.cast:hover{border-color:#2d5846;box-shadow:inset 0 0 0 1px rgba(220,232,169,.12),0 18px 34px -20px rgba(17,24,20,.75)}
+.cast-photo{background:
+ radial-gradient(90% 34% at 50% 0%,rgba(73,112,93,.55) 0%,rgba(45,88,70,0) 75%),
+ radial-gradient(80% 26% at 50% 100%,rgba(45,88,70,.45) 0%,rgba(45,88,70,0) 75%),
+ linear-gradient(160deg,rgba(220,232,169,.05) 0%,rgba(220,232,169,0) 40%),
+ linear-gradient(to bottom,#1d2a24 0%,var(--cast-ink) 13%,var(--cast-deep) 50%,var(--cast-ink) 87%,#1a2621 100%)}
+.cast-photo::after{background:linear-gradient(to bottom,rgba(17,24,20,.3),rgba(17,24,20,0) 12%,rgba(17,24,20,0) 84%,rgba(17,24,20,.45))}
+.cast-no{color:var(--cast-silver)}
+.cast-type{color:var(--cast-accent);border-color:rgba(220,232,169,.4)}
+.cast-body{background:linear-gradient(to bottom,rgba(45,88,70,.18),rgba(45,88,70,0) 60%);border-top:1px solid var(--cast-rule)}
+.cast-more{color:var(--cast-accent);border-bottom-color:rgba(220,232,169,.5)}
+.cast:hover .cast-more{color:#fff;border-color:#fff}
+
+/* Black-leaning photo frame with only a trace of green; the info panel returns to the site's white for legibility. */
+.cast{background:#fff;border:1px solid var(--line);box-shadow:none}
+.cast:hover{border-color:var(--green);box-shadow:0 16px 30px -20px rgba(17,24,20,.45)}
+.cast-photo{background:
+ radial-gradient(90% 32% at 50% 0%,rgba(60,78,69,.42) 0%,rgba(60,78,69,0) 75%),
+ radial-gradient(80% 24% at 50% 100%,rgba(45,60,52,.35) 0%,rgba(45,60,52,0) 75%),
+ linear-gradient(160deg,rgba(255,255,255,.035) 0%,rgba(255,255,255,0) 40%),
+ linear-gradient(to bottom,#1a1d1c 0%,#131615 13%,#0e100f 50%,#131615 87%,#181b1a 100%)}
+.cast-photo::after{background:linear-gradient(to bottom,rgba(14,16,15,.3),rgba(14,16,15,0) 12%,rgba(14,16,15,0) 84%,rgba(14,16,15,.4))}
+.cast-no{color:#d6dbd5}
+.cast-type{color:#d6dbd5;border-color:rgba(214,219,213,.45)}
+.cast-body{background:#fff;border-top:0}
+.cast-author{color:var(--muted)}
+.cast-stats{border-color:var(--line)}.cast-stats>div+div{border-left-color:var(--line)}
+.cast-stats dt{color:var(--muted)}.cast-stats dd{color:var(--ink)}
+.cast-foot .price{color:var(--ink)}
+.cast-more{color:var(--green);border-bottom-color:var(--green)}
+.cast:hover .cast-more{color:var(--ink);border-color:var(--ink)}
+.cast a:focus-visible{outline-color:#7a9a59}
+
+/* Tighter black bands (about 18% shorter) with the square thumbnail still whole; every panel keeps one height. */
+#filters[data-route=avatars]~#content .cast .visual{aspect-ratio:100/127}
+.cast .visual img{-webkit-mask-image:linear-gradient(to bottom,transparent 10.7%,#000 14.7%,#000 85.3%,transparent 89.3%);mask-image:linear-gradient(to bottom,transparent 10.7%,#000 14.7%,#000 85.3%,transparent 89.3%)}
+/* Name block in the white info panel: Japanese name, small English name, then maker. */
+.cast-id{display:flex;flex-direction:column;gap:3px;min-width:0}
+#filters[data-route=avatars]~#content .cast .cast-title{margin:0;min-height:0;font-size:17px;font-weight:600;letter-spacing:.08em;line-height:1.45;color:var(--ink);display:block;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cast-title a{text-decoration:none}.cast-title a:hover{text-decoration:underline}
+.cast-en{margin:0;font-family:Georgia,serif;font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--muted);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.cast-id .cast-author{margin-top:5px;font-size:11px}
+@media(max-width:1180px) and (min-width:761px){#filters[data-route=avatars]~#content .cast .cast-title{font-size:15px}}
+@media(max-width:560px){#filters[data-route=avatars]~#content .cast .cast-title{font-size:13px;letter-spacing:.04em}.cast-en{font-size:8px;letter-spacing:.12em}.cast-id .cast-author{margin-top:3px;font-size:10px}}
+.cast-en{height:14px;line-height:14px}
+#filters[data-route=avatars]~#content .cast .cast-title{height:1.45em}.cast-id .cast-author{height:16px;line-height:16px}
+
+/* Name set into the lower black band: light type resting on the dark, softened by the band's own shading. */
+.cast-plate{position:absolute;left:20px;right:20px;bottom:12px;width:auto;height:auto;clip:auto;overflow:visible;white-space:normal;z-index:3;display:flex;flex-direction:column;gap:2px;pointer-events:none}
+.cast-photo::after{background:linear-gradient(to bottom,rgba(14,16,15,.3),rgba(14,16,15,0) 12%,rgba(14,16,15,0) 78%,rgba(14,16,15,.55) 92%,rgba(14,16,15,.7))}
+#filters[data-route=avatars]~#content .cast .cast-title{height:auto;margin:0;color:#f1f3ef;font-size:18px;font-weight:600;letter-spacing:.12em;line-height:1.35;text-shadow:0 1px 10px rgba(0,0,0,.55)}
+.cast-plate .cast-en{height:auto;line-height:1.4;color:rgba(214,219,213,.78);font-size:10px;letter-spacing:.24em}
+.cast-id .cast-author{margin-top:0}
+.cast:hover .cast-title{color:#fff}
+@media(max-width:1180px) and (min-width:761px){.cast-plate{left:14px;right:14px;bottom:9px}#filters[data-route=avatars]~#content .cast .cast-title{font-size:15px}.cast-plate .cast-en{font-size:9px;letter-spacing:.18em}}
+@media(max-width:560px){.cast-plate{left:10px;right:10px;bottom:6px;gap:0}#filters[data-route=avatars]~#content .cast .cast-title{font-size:12px;letter-spacing:.06em}.cast-plate .cast-en{font-size:7px;letter-spacing:.12em}}
+
+/* Page head: title and index on one line; count on the left and a quiet note on the right of the row beneath. */
+.result-status{display:flex;justify-content:space-between;align-items:baseline;gap:16px}
+.result-status::after{content:attr(data-note);color:var(--muted);font-size:11px;letter-spacing:.04em;text-align:right}
+.result-status:empty::after{content:none}
+@media(max-width:560px){.result-status::after{font-size:10px}}
+.cast-more{font-family:inherit;font-size:11px;letter-spacing:.08em}
+
+/* Wide monitors: more columns so about two rows fit on screen, without dropping to dense marketplace thumbnails. */
+@media(min-width:1280px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:36px 20px}}
+@media(min-width:1700px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(5,minmax(0,1fr));gap:36px 20px}}
+@media(min-width:1280px){.cast-plate{left:16px;right:16px;bottom:10px}#filters[data-route=avatars]~#content .cast .cast-title{font-size:16px}.cast-no{top:13px;left:16px;font-size:12px}.cast-body{padding:12px 16px 14px;gap:10px}}
+/* Always three across; on wide screens the trio narrows to the viewport height so roughly two rows fit. */
+@media(min-width:761px){#filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(3,minmax(0,1fr));gap:32px 22px;max-width:max(760px,calc((100vh - 300px) * 1.18 + 44px));margin:0 auto}}
+@media(min-width:761px){.catalog:has(#filters[data-route=avatars])>:is(#page-heading,#result-status){max-width:max(760px,calc((100vh - 300px) * 1.18 + 44px));margin-left:auto;margin-right:auto}}
+.cast-foot{flex-wrap:wrap;row-gap:6px}
+.cast-foot{flex-wrap:nowrap}.cast-foot .price{min-width:0;overflow:hidden;text-overflow:ellipsis}
+@media(min-width:761px){.cast-foot .price{font-size:13px}.cast-more{font-size:10px;letter-spacing:.04em}}
+/* Four across on landscape screens from 1000px (portrait monitors stay at three), sized to the viewport height so about two rows fit; three across between tablet and 1000px. */
+@media(min-width:1000px) and (orientation:landscape){
+ #filters[data-route=avatars]~#content .grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:30px 20px;max-width:max(960px,calc((100vh - 300px) * 1.57 + 60px))}
+ .catalog:has(#filters[data-route=avatars])>:is(#page-heading,#result-status){max-width:max(960px,calc((100vh - 300px) * 1.57 + 60px))}
+}
+@media(min-width:1000px) and (max-width:1499px) and (orientation:landscape){.cast-foot{gap:6px}.cast-foot .price{font-size:12px;letter-spacing:.02em}.cast-more{letter-spacing:0}.cast-body{padding:11px 13px 13px}}
+/* Landscape four-across at full presence: fill the width up to 1560px instead of shrinking to the viewport height. */
+@media(min-width:1000px) and (orientation:landscape){
+ #filters[data-route=avatars]~#content .grid{max-width:1560px;gap:40px 24px}
+ .catalog:has(#filters[data-route=avatars])>:is(#page-heading,#result-status){max-width:1560px}
+ .cast-plate{left:18px;right:18px;bottom:12px}#filters[data-route=avatars]~#content .cast .cast-title{font-size:18px}.cast-plate .cast-en{font-size:10px}
+ .cast-no{top:15px;left:18px;font-size:13px}
+ .cast-body{padding:14px 18px 16px;gap:12px}.cast-foot .price{font-size:14px;letter-spacing:.04em}.cast-more{font-size:11px;letter-spacing:.06em}
+}
