@@ -33,6 +33,7 @@ def connect(root=ROOT):
     CREATE TABLE IF NOT EXISTS compatibility(product_id TEXT,target_type TEXT,target_id TEXT,payload TEXT,PRIMARY KEY(product_id,target_type,target_id));
     CREATE TABLE IF NOT EXISTS queue(pos INTEGER PRIMARY KEY,product_id TEXT UNIQUE,status TEXT NOT NULL,error TEXT,updated_at TEXT);
     CREATE TABLE IF NOT EXISTS budgets(day TEXT PRIMARY KEY,used INTEGER NOT NULL);
+    CREATE TABLE IF NOT EXISTS daily_budgets(day TEXT PRIMARY KEY,used INTEGER NOT NULL);
     CREATE TABLE IF NOT EXISTS changes(seq INTEGER PRIMARY KEY AUTOINCREMENT,product_id TEXT NOT NULL);
     CREATE TABLE IF NOT EXISTS overrides(entity TEXT,entity_key TEXT,patch TEXT,PRIMARY KEY(entity,entity_key));
     CREATE TABLE IF NOT EXISTS classifications(id TEXT PRIMARY KEY,payload TEXT NOT NULL);
@@ -50,6 +51,7 @@ def status(db,root=ROOT):
     result={k:get(db,k) for k in ('runId','phase','cursor','total','downloaded','cached','failed','added','requests','likesCursor','retryAt','reason','lastProductAt','lastRequestAt','lastRequestStatus','lastDownloadAt','migrationCursor')}
     pending=db.execute("SELECT count(*) FROM queue WHERE status='pending'").fetchone()[0]
     result.update(updatedAt=now(),productsStored=db.execute('SELECT count(*) FROM products').fetchone()[0],pending=pending,processed=(get(db,'total',0)-pending),accessories=len(get(db,'accessoryIds',[])),changeSequence=db.execute('SELECT coalesce(max(seq),0) FROM changes').fetchone()[0])
+    result['daily']=get(db,'daily',None)
     if own_transaction:db.commit()
     temp=root/f'progress.{os.getpid()}.tmp';temp.write_text(json.dumps(result,ensure_ascii=False,indent=2),encoding='utf8');temp.replace(root/'progress.json')
     return result
@@ -58,7 +60,7 @@ class Halt(Exception):
 class NoRedirect(urllib.request.HTTPRedirectHandler):
     def redirect_request(self,*args,**kwargs): return None
 class Fetcher:
-    def __init__(self,db): self.db=db;self.last=0;self.opener=urllib.request.build_opener(NoRedirect());self.rate_errors=get(db,'consecutiveRateLimits',0)
+    def __init__(self,db,daily=False): self.db=db;self.daily=daily;self.last=0;self.opener=urllib.request.build_opener(NoRedirect());self.rate_errors=get(db,'consecutiveRateLimits',0)
     def get(self,url):
         u=urllib.parse.urlparse(url)
         if u.scheme!='https' or u.hostname not in ('booth.pm','accounts.booth.pm') or u.username or u.password or u.port: raise Halt('invalid_url')
@@ -69,8 +71,13 @@ class Fetcher:
             if used and used[0]>=12000:
                 until=dt.datetime.combine(today+dt.timedelta(days=1),dt.time(0,1),JST).timestamp()
                 raise Halt('daily_budget',until)
+            daily_used=self.db.execute('SELECT used FROM daily_budgets WHERE day=?',(day,)).fetchone() if self.daily else None
+            if daily_used and daily_used[0]>=500:
+                until=dt.datetime.combine(today+dt.timedelta(days=1),dt.time(0,1),JST).timestamp()
+                raise Halt('maintenance_budget',until)
             with self.db:
                 self.db.execute('INSERT INTO budgets VALUES(?,1) ON CONFLICT(day) DO UPDATE SET used=used+1',(day,));put(self.db,'requests',get(self.db,'requests',0)+1);put(self.db,'lastRequestAt',now())
+                if self.daily:self.db.execute('INSERT INTO daily_budgets VALUES(?,1) ON CONFLICT(day) DO UPDATE SET used=used+1',(day,))
             self.last=time.monotonic()
             try:
                 request=urllib.request.Request(url,headers={'User-Agent':'vrc-mens-catalog/0.1 (public metadata catalog)','Accept-Encoding':'identity'})

@@ -1,0 +1,35 @@
+[Unit]
+Description=VRC Men's Catalog daily public metadata updates
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=oneshot
+User=vrcmens
+Group=vrcmens
+WorkingDirectory=/var/lib/vrc-mens-collector
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/usr/bin/python3 /opt/vrc-mens-collector/daily.py
+TimeoutStartSec=3600
+TimeoutStopSec=35
+KillMode=mixed
+UMask=0077
+MemoryAccounting=yes
+MemoryHigh=256M
+MemoryMax=384M
+MemorySwapMax=128M
+CPUAccounting=yes
+CPUQuota=50%
+TasksMax=32
+Nice=10
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectSystem=strict
+ProtectHome=yes
+ReadWritePaths=/var/lib/vrc-mens-collector
+RestrictAddressFamilies=AF_UNIX AF_INET AF_INET6
+CapabilityBoundingSet=
+ProtectKernelTunables=yes
+ProtectKernelModules=yes
+ProtectControlGroups=yes
+

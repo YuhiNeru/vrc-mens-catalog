@@ -1,6 +1,6 @@
 # ConoHa VPSでの収集運用
 
-移行日:2026-10-12 JST。SSHは常に `StrictHostKeyChecking=yes` と確認済みknown-hostsを使用します。秘密鍵はWindows上でのみ使用し、内容の表示・転送は行いません。
+移行日:2026-10-12 JST。初回の全件クロールは2026-10-14に完走済み(`phase=complete`)です。以後の更新は `vrc-mens-daily.timer`(`daily.py`)が担い、常駐の `vrc-mens-collector.service` は役目が終わったため2026-11-08にVPS上で `disable` しました(ユニットファイルは残してあります)。SSHは常に `StrictHostKeyChecking=yes` と確認済みknown-hostsを使用します。秘密鍵はWindows上でのみ使用し、内容の表示・転送は行いません。
 
 ## 接続設定(必須の環境変数)
 
@@ -19,16 +19,30 @@
 
 | 項目 | 構成 |
 |---|---|
-| 常駐サービス | `vrc-mens-collector.service` |
+| 初回クロール(完了済み・2026-11-08に disable) | `vrc-mens-collector.service`(`worker.py`) |
+| 日次更新 | `vrc-mens-daily.timer` / `vrc-mens-daily.service`(`daily.py`) |
 | DB・生の商品ページ・進捗・バックアップ・差分エクスポート | `VPS_STATE_DIR` 配下 |
 | プログラム | `VPS_APP_DIR` |
-| 日次バックアップ | `vrc-mens-collector-backup.timer` |
+| 日次バックアップ | `vrc-mens-collector-backup.timer`(`manage.py backup`、毎日03:30 JST) |
+| バックアップの整理 | VPS側の `mens-backup-prune.timer`(毎日04:30 JST)。最新7世代(7日分)を残して削除。このリポジトリには含まれません |
 
 VPSはHTTP取得、既存TypeScriptロジックによる解析・対応確認・小物分類、重複除去、SQLiteへの保存、終了時のスキ数取得を担当します。Python標準ライブラリと、専用ディレクトリ内のNode.js、依存ライブラリをまとめた解析用JSだけで動きます。ブラウザ・npm常駐・Wrangler・LLM・翻訳・ベクトル生成・外部AI APIはVPSに導入していません。現行収集経路には有料AI APIの呼び出しがなく、AI API費用は発生しません。
 
 フロントエンドとローカルD1、ユーザーの手動補正はWindowsに残ります。商品画像は従来どおりBOOTHの画像URLを使用します。
 
+## 日次更新(daily.py)
+
+`vrc-mens-daily.timer` が毎時:10(JST)に `vrc-mens-daily.service`(`Type=oneshot`)を起動し、`daily.py` を実行します。`daily.py` は `worker.py` の `Fetcher`、`Parser`、`connect`、`get/put` を import して使うため、`worker.py` は常駐させなくても削除してはいけません(`manage.py` も import します)。
+
+- 実質1日1回(JST 0:10台)実行し、当日分が `phase=complete` なら即終了します。失敗時は1時間ごとに有界リトライします。
+- 新着検索から新規候補を発見し、7日以上更新されていない確認済み小物・分類・watchlist掲載分を最大400件再取得し、小物のスキ数を更新します。
+- 1日のリクエスト上限は500(`daily_budgets` テーブル)。初回クロールの1日12,000件(`budgets`)とは別に数えます。
+- 前提は、DBの `meta.phase` が `complete` であることです(ワーカーのプロセスが動いている必要はありません)。`manage.py resume` はこの `phase` を `products` に戻し、日次更新が `initial_collection_not_complete` で止まるため、完了後は実行しないでください。
+- 操作: `manage.py daily-resume`(Retry-After経過後の再開)、`daily-likes`(スキ数の再取得)、`daily-continue`(商品の継続)、`status --compact`(日次状態の要約)。
+
 ## 制限と再開
+
+以下は初回クロール(`worker.py`)の仕様です。完了済みのため通常は動きません。
 
 - 通信は同時1件、開始間隔3秒、タイムアウト20秒。移行前のJST日次12,000リクエスト使用量を引き継ぎます。
 - キュー位置、商品、対応根拠、変更通知を同じSQLiteトランザクションで保存します。再起動後は未完了の最初の位置から進みます。
@@ -46,6 +60,8 @@ VPSはHTTP取得、既存TypeScriptロジックによる解析・対応確認・
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 status
 # 最近のログ(商品本文・Cookie・トークンを出力しない)
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 logs
+# 以下の stop / start は初回クロール用の常駐サービス向け(2026-11-08以降は disable 済み)。
+# start は manage.py resume を呼び phase を戻すため、日次更新が止まる恐れがある。通常は使わない。
 # 停止(自動起動の設定は残る)
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 stop
 # 明示的に再開。Retry-Afterと日次待機期限は短縮しない
@@ -56,7 +72,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 ba
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync-vps.ps1
 ```
 
-同期は**手動**です。アプリの再起動は不要で、同期完了後に一覧を再読み込みします。VPSの新規取得はWindowsを切っても継続しますが、ローカルの一覧は次の同期まで更新されません。
+同期は**手動**です。アプリの再起動は不要で、同期完了後に一覧を再読み込みします。VPSの日次更新(`vrc-mens-daily.timer`)はWindowsを切っても継続しますが、ローカルの一覧は次の同期まで更新されません。
 
 同期の確定位置は `data/vps-sync/cursor.json`。SQLiteの一貫した読み取りで確定した連番までを取得し、ローカル側では商品IDと取得日時で追加・更新します。ローカルのavatars・bodies・runs等を置き換えず、手動補正の既存値を優先します。D1にだけ存在する既存overrideも上書きしません。取り込みが途中で失敗した場合は連番を進めず、同じ差分を再実行できます。既存DB全体の上書きはしません。
 
@@ -64,7 +80,7 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync-vps.ps1
 
 ## バックアップ・復元
 
-日次タイマーと手動バックアップはSQLite Backup APIを使います。稼働中のWALを単純コピーする方式ではありません。DBの `.sqlite` と同名の `.seed.json` が一組です。raw HTMLはバックアップ対象DBに含まれません。未処理・未取得ページは必要に応じ再取得できます。バックアップは自動削除しないため、ディスク容量を定期確認します。
+日次タイマーと手動バックアップはSQLite Backup APIを使います。稼働中のWALを単純コピーする方式ではありません。DBの `.sqlite` と同名の `.seed.json` が一組です。raw HTMLはバックアップ対象DBに含まれません。未処理・未取得ページは必要に応じ再取得できます。バックアップはVPS側の `mens-backup-prune.timer` が最新7世代を残して整理しますが、`/var/lib/vrc-mens-collector/backups` のディスク容量は定期確認します。
 
 VPSで復元する場合(`<SERVICE_USER>`、`<APP_DIR>`、`<STATE_DIR>` は上記環境変数の値):
 

@@ -1,0 +1,11 @@
+[Unit]
+Description=Check VRC Men's Catalog daily updates and bounded retry each hour
+
+[Timer]
+OnCalendar=*-*-* *:10:00 Asia/Tokyo
+Persistent=true
+RandomizedDelaySec=60
+Unit=vrc-mens-daily.service
+
+[Install]
+WantedBy=timers.target

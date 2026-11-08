@@ -70,7 +70,7 @@ def recovery(db,root):
     print(str(dest))
 
 def main():
-    parser=argparse.ArgumentParser();parser.add_argument('action',choices=['init','status','export','backup','resume','restore','recovery']);parser.add_argument('--after',type=int,default=0);parser.add_argument('--backup');parser.add_argument('--root',type=pathlib.Path,default=worker.ROOT);args=parser.parse_args();root=args.root
+    parser=argparse.ArgumentParser();parser.add_argument('action',choices=['init','status','export','backup','resume','daily-resume','daily-likes','daily-continue','restore','recovery']);parser.add_argument('--compact',action='store_true');parser.add_argument('--after',type=int,default=0);parser.add_argument('--backup');parser.add_argument('--root',type=pathlib.Path,default=worker.ROOT);args=parser.parse_args();root=args.root
     os.umask(0o077)
     if args.action=='init':initialize(root);return
     if args.action=='restore':
@@ -86,7 +86,10 @@ def main():
             if side.exists():side.unlink()
         temp.replace(root/'collector.sqlite');shutil.copy2(path.with_suffix('.seed.json'),root/'seed.json');print('restored');return
     db=worker.connect(root)
-    if args.action=='status':print(json.dumps(worker.status(db,root),ensure_ascii=False,indent=2))
+    if args.action=='status':
+        report=worker.status(db,root)
+        if args.compact and report['daily']:report['daily']={k:v for k,v in report['daily'].items() if k not in ('sources','next','likesIds')}
+        print(json.dumps(report,ensure_ascii=False,indent=2))
     elif args.action=='export':export(db,root,args.after)
     elif args.action=='backup':backup(db,root)
     elif args.action=='recovery':recovery(db,root)
@@ -96,5 +99,24 @@ def main():
             worker.put(db,'phase','waiting' if until>worker.time.time() else 'products')
             if until<=worker.time.time():worker.put(db,'reason','');worker.put(db,'retryAt',None)
         print('resume enabled')
+    elif args.action=='daily-resume':
+        state=worker.get(db,'daily',{})
+        until=state.get('retryAt') or 0
+        if until>worker.time.time():raise RuntimeError('Retry-After has not elapsed')
+        state.update(phase=state.get('resumePhase','search'),reason='',retryAt=None)
+        with db:worker.put(db,'daily',state)
+        print('daily resume enabled')
+    elif args.action=='daily-likes':
+        state=worker.get(db,'daily',{})
+        if state.get('phase')!='complete':raise RuntimeError('Finish/resume the daily cycle before refreshing likes')
+        state.update(phase='likes',likesCursor=0);state.pop('likesIds',None)
+        with db:worker.put(db,'daily',state)
+        print('daily likes refresh scheduled')
+    elif args.action=='daily-continue':
+        state=worker.get(db,'daily',{})
+        if state.get('phase')!='complete':raise RuntimeError('Finish/resume the daily cycle before continuing products')
+        state.update(phase='products',likesCursor=0);state.pop('likesIds',None);state.pop('endedAt',None);state.pop('newLimit',None)
+        with db:worker.put(db,'daily',state)
+        print('daily product continuation scheduled; daily request cap remains unchanged')
     db.close()
 if __name__=='__main__':main()
