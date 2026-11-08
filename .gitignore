@@ -2,7 +2,7 @@ node_modules/
 .npm-cache/
 .wrangler/
 dist/
-data/
+data/*
 !data/.gitkeep
 .env
 .env.*
@@ -16,3 +16,8 @@ data/
 test-results/
 __pycache__/
 *.pyc
+*.key
+known_hosts*
+*.sqlite
+*.db
+.runtime/

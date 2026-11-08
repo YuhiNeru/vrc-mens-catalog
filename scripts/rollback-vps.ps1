@@ -1,15 +1,16 @@
-param([string]$KeyPath='C:\Code\world-compass\.runtime\conoha-ssh.pem',[string]$KnownHosts='C:\Code\world-compass\.runtime\vps-known-hosts')
 $ErrorActionPreference='Stop'
+. (Join-Path $PSScriptRoot 'vps-common.ps1')
+$vps=Get-VpsConfig
 $taskRoot=Split-Path -Parent $PSScriptRoot
 Set-Location -LiteralPath $taskRoot
-$sshArgs=@('-i',$KeyPath,'-o',"UserKnownHostsFile=$KnownHosts",'-o','StrictHostKeyChecking=yes','-o','BatchMode=yes')
-& ssh @sshArgs root@160.251.167.191 'systemctl disable --now vrc-mens-collector.service; systemctl is-active vrc-mens-collector.service'
+$sshArgs=$vps.SshArgs
+& ssh @sshArgs $vps.VPS_SSH_TARGET 'systemctl disable --now vrc-mens-collector.service; systemctl is-active vrc-mens-collector.service'
 if($LASTEXITCODE -ne 3){throw 'Confirm VPS collector is inactive before rollback'}
-& (Join-Path $PSScriptRoot 'sync-vps.ps1') -KeyPath $KeyPath -KnownHosts $KnownHosts
+& (Join-Path $PSScriptRoot 'sync-vps.ps1')
 if($LASTEXITCODE -ne 0){throw 'Sync failed; local collector remains disabled'}
-& ssh @sshArgs root@160.251.167.191 'runuser -u vrcmens -- python3 /opt/vrc-mens-collector/manage.py recovery'
+& ssh @sshArgs $vps.VPS_SSH_TARGET "$($vps.Manage) recovery"
 if($LASTEXITCODE -ne 0){throw 'Recovery export failed'}
-& scp @sshArgs 'root@160.251.167.191:/var/lib/vrc-mens-collector/exports/recovery.tar.gz' 'data/vps-sync/recovery.tar.gz'
+& scp @sshArgs "$($vps.VPS_SSH_TARGET):$($vps.VPS_STATE_DIR)/exports/recovery.tar.gz" 'data/vps-sync/recovery.tar.gz'
 if($LASTEXITCODE -ne 0){throw 'Recovery download failed'}
 & python deploy/vps/restore-local.py data/vps-sync/recovery.tar.gz
 if($LASTEXITCODE -ne 0){throw 'Checkpoint restore failed'}
