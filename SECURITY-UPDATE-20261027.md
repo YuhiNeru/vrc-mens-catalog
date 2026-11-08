@@ -24,3 +24,12 @@ Checks were run against the existing local working tree, which includes separate
 - [Ubuntu Brotli backport](https://ubuntu.com/security/CVE-2026-111497)
 - [Git for Windows security release](https://github.com/git-for-windows/git/releases/tag/v2.56.0.windows.4)
 - [PHP official changelog](https://www.php.net/ChangeLog-8.php)
+
+## Corrections (2026-11-08)
+
+The text above is kept as the original record. Checked against the repository tree on 2026-11-08:
+
+- `package.json` pins `engines.node` to `^22.23.4 || ^24.22.1 || ^26.12.1`, which includes the Node.js 24.22.1 named above.
+- "No collection budgets, databases or timers were changed" describes that day only. Since then the VPS collection moved to the daily timer (`vrc-mens-daily.timer`, imported into `deploy/vps/` on 2026-11-08) and the resident `vrc-mens-collector.service` was disabled on the VPS; see `docs/vps-collector-operations.md`.
+- The Ubuntu, Python, certifi and development-PC version statements describe the machines on 2026-10-27. They cannot be verified from the repository tree and are not re-checked here.
+- "Existing tests and TypeScript check passed": on 2026-11-08, `npm run typecheck` passes and `npm test` gives 29 pass / 1 skip (30 tests); Python collector tests 8 pass.
