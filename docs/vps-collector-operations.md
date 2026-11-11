@@ -56,7 +56,7 @@ VPSはHTTP取得、既存TypeScriptロジックによる解析・対応確認・
 プロジェクトのルートで実行します。認証情報を入力・保存する必要はありません。上記の環境変数で指定したSSH鍵とknown-hostsファイルを参照します。
 
 ```powershell
-# 進捗・メモリ・CPU累積値
+# 進捗・メモリ・CPU累積値(常駐サービスと日次タイマー/サービスの状態、`manage.py status --compact` の要約を含む)
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 status
 # 最近のログ(商品本文・Cookie・トークンを出力しない)
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 logs
@@ -68,11 +68,15 @@ powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 st
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 start
 # DBをその場で整合したスナップショットへ保存
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 backup
+# 日次更新(vrc-mens-daily.timer / .service)の停止。タイマーの自動起動設定は残る
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 daily-stop
+# 日次更新の再開(manage.py daily-resume のあとタイマーとサービスを起動)。Retry-After経過前は manage.py が拒否し、起動しない
+powershell -NoProfile -ExecutionPolicy Bypass -File scripts/vps-collector.ps1 daily-resume
 # VPSの差分をローカルJSON・D1へ取り込み
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/sync-vps.ps1
 ```
 
-同期は**手動**です。アプリの再起動は不要で、同期完了後に一覧を再読み込みします。VPSの日次更新(`vrc-mens-daily.timer`)はWindowsを切っても継続しますが、ローカルの一覧は次の同期まで更新されません。
+同期は**手動**です。同時実行は `data/vps-sync/script.lock` で防ぎます(実行中に再度起動するとエラーで止まります)。`scripts/export-watchlist.ts` がある場合は、取り込みのあとにそのwatchlistをVPSへ送り、日次更新が読む `watchlist.json` を置き換えます(ファイルが無ければこの手順は省略され、同期は失敗しません。この手順の失敗は警告のみです)。アプリの再起動は不要で、同期完了後に一覧を再読み込みします。VPSの日次更新(`vrc-mens-daily.timer`)はWindowsを切っても継続しますが、ローカルの一覧は次の同期まで更新されません。
 
 同期の確定位置は `data/vps-sync/cursor.json`。SQLiteの一貫した読み取りで確定した連番までを取得し、ローカル側では商品IDと取得日時で追加・更新します。ローカルのavatars・bodies・runs等を置き換えず、手動補正の既存値を優先します。D1にだけ存在する既存overrideも上書きしません。取り込みが途中で失敗した場合は連番を進めず、同じ差分を再実行できます。既存DB全体の上書きはしません。
 
@@ -101,7 +105,7 @@ systemctl start vrc-mens-collector.service
 powershell -NoProfile -ExecutionPolicy Bypass -File scripts/rollback-vps.ps1
 ```
 
-まずVPSの当サービスだけを停止・自動起動解除し、停止確認に成功してから差分、巡回位置、日次使用量、VPSで新たに保存したHTMLを回収します。その後でローカルの移行マーカーを解除し、非表示のプロセスとしてローカル収集を再開します。VPSの停止またはデータ回収が確認できなければローカルは起動しません。
+まずWindowsのスケジュールタスク `VRCMensCatalogSync`(あれば)を無効化・停止し、VPSの常駐サービス(`vrc-mens-collector.service`)と日次タイマー・サービス(`vrc-mens-daily.timer`、`vrc-mens-daily.service`)を停止・自動起動解除します。三つとも停止していることを確認できてから差分、巡回位置、日次使用量、VPSで新たに保存したHTMLを回収します。その後でローカルの移行マーカーを解除し、非表示のプロセスとしてローカル収集を再開します。VPSの停止またはデータ回収が確認できなければローカルは起動しません。
 
 日次待機中に先行処理したキャッシュは、旧ローカル方式へ戻した場合、最初の未完了位置以降で再照合されることがあります。DB保存は商品IDで重複排除され、取得済みHTMLがあれば再通信しません。
 

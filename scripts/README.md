@@ -20,9 +20,9 @@ Run everything from the repository root (`npx tsx scripts/<name>.ts`, or `powers
 | Script | Purpose |
 |---|---|
 | `vps-common.ps1` | Shared config loader (dot-sourced by the three scripts below). Not run directly. |
-| `vps-collector.ps1` | `status`, `stop`, `start`, `logs`, `backup` against `vrc-mens-collector.service` (the resident first-crawl service). |
-| `sync-vps.ps1` | Manual pull of the VPS change export into local JSON and D1. |
-| `rollback-vps.ps1` | Stops the VPS service, recovers its state, and restarts local collection. |
+| `vps-collector.ps1` | Seven actions: `status`, `stop`, `start`, `logs`, `backup`, `daily-stop`, `daily-resume`. `stop`, `start` and `logs` act on `vrc-mens-collector.service` (the resident first-crawl service), `backup` runs `manage.py backup`, `daily-stop` and `daily-resume` act on `vrc-mens-daily.timer` and `vrc-mens-daily.service`. `status` shows both the collector and the daily job (`manage.py status --compact`). |
+| `sync-vps.ps1` | Manual pull of the VPS change export into local JSON and D1. Holds `data/vps-sync/script.lock` so runs cannot overlap, and, if `scripts/export-watchlist.ts` exists, uploads its watchlist to the VPS for the daily job (skipped otherwise). |
+| `rollback-vps.ps1` | Disables the Windows sync task `VRCMensCatalogSync` (if present), stops and disables the VPS collector service and the daily timer/service, recovers the VPS state, and restarts local collection. |
 
 ## Audit, inspection and review helpers (read `data/`, write a report or candidate file under `data/`)
 
