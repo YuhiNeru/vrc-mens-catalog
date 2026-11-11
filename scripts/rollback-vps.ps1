@@ -6,8 +6,8 @@ Set-Location -LiteralPath $taskRoot
 $sshArgs=$vps.SshArgs
 $syncTask=Get-ScheduledTask -TaskName 'VRCMensCatalogSync' -ErrorAction SilentlyContinue
 if($syncTask){$syncTask | Disable-ScheduledTask | Out-Null; $syncTask | Stop-ScheduledTask}else{Write-Host 'Scheduled task VRCMensCatalogSync not found; skipping.'}
-& ssh @sshArgs $vps.VPS_SSH_TARGET 'systemctl disable --now vrc-mens-daily.timer vrc-mens-daily.service; systemctl disable --now vrc-mens-collector.service; systemctl is-active vrc-mens-collector.service vrc-mens-daily.timer vrc-mens-daily.service'
-if($LASTEXITCODE -ne 3){throw 'Confirm VPS collector and daily job are inactive before rollback'}
+$unitStates=& ssh @sshArgs $vps.VPS_SSH_TARGET 'systemctl disable --now vrc-mens-daily.timer vrc-mens-daily.service; systemctl disable --now vrc-mens-collector.service; systemctl is-active vrc-mens-collector.service vrc-mens-daily.timer vrc-mens-daily.service'
+if(@($unitStates).Count -ne 3 -or @($unitStates | Where-Object {$_ -ne 'inactive'}).Count -ne 0){throw 'Confirm VPS collector and daily job are inactive before rollback'}
 & (Join-Path $PSScriptRoot 'sync-vps.ps1')
 if($LASTEXITCODE -ne 0){throw 'Sync failed; local collector remains disabled'}
 & ssh @sshArgs $vps.VPS_SSH_TARGET "$($vps.Manage) recovery"
